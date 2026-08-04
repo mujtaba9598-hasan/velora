@@ -235,20 +235,20 @@ document.addEventListener("DOMContentLoaded", function () {
           ${currentPath === 'calendario.html' ? '<span class="dock-active-dot"></span>' : ''}
         </a>
 
-        <!-- 5. Corsi & Master Dropdown (Preserving all pages) -->
+        <!-- 5. Corsi & Master Dropdown -->
         <div class="dock-dropdown-container">
           <div class="dock-item-btn">
             ${isEnglish ? "Courses ▼" : "Corsi & Master ▼"}
             <span class="dock-item-tooltip">Catalogo Formativo</span>
           </div>
           <div class="dock-dropdown-menu">
-            <a href="master_caf.html">Master CAF e Patronato <span>→</span></a>
-            <a href="operatore_fiscale.html">Operatore Fiscale 360° <span>→</span></a>
-            <a href="esame_italiano.html">Esami Lingua Italiana <span>→</span></a>
-            <a href="corsi_gratuiti.html">Corsi Gratuiti Disoccupati <span>→</span></a>
-            <a href="master_imprenditore.html">Master Imprenditore <span>→</span></a>
-            <a href="manuali.html">Manuale Ufficiale <span>→</span></a>
-            <a href="trasparenza.html">Trasparenza Civica <span>→</span></a>
+            <a href="master_caf.html" style="font-weight: 600;">${isEnglish ? "Master CAF & Welfare" : "Master CAF e Patronato"} <span style="color: #25D366; font-size: 0.75rem; font-weight: 700;">LIVE</span></a>
+            <a href="operatore_fiscale.html" style="font-weight: 600;">${isEnglish ? "360° Fiscal Operator" : "Operatore Fiscale 360°"} <span style="color: #25D366; font-size: 0.75rem; font-weight: 700;">LIVE</span></a>
+            <a href="esame_italiano.html" style="font-weight: 600;">${isEnglish ? "Italian Language Exams" : "Esami Lingua Italiana"} <span style="color: #25D366; font-size: 0.75rem; font-weight: 700;">LIVE</span></a>
+            <a href="corsi_gratuiti.html" style="color: #94A3B8;">${isEnglish ? "Free Job Courses" : "Corsi Gratuiti Disoccupati"} <span style="font-size: 0.7rem; background: rgba(239,68,68,0.25); color: #EF4444; padding: 2px 6px; border-radius: 4px; font-weight: 600;">${isEnglish ? "Coming Soon" : "In Arrivo"}</span></a>
+            <a href="master_imprenditore.html" style="color: #94A3B8;">${isEnglish ? "Master Entrepreneur" : "Master Imprenditore"} <span style="font-size: 0.7rem; background: rgba(239,68,68,0.25); color: #EF4444; padding: 2px 6px; border-radius: 4px; font-weight: 600;">${isEnglish ? "Coming Soon" : "In Arrivo"}</span></a>
+            <a href="manuali.html">${isEnglish ? "Official Handbook" : "Manuale Ufficiale"} <span>→</span></a>
+            <a href="trasparenza.html">${isEnglish ? "Civic Transparency" : "Trasparenza Civica"} <span>→</span></a>
           </div>
         </div>
 
