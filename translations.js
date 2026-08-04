@@ -49,6 +49,7 @@ const VELORA_TRANSLATIONS = {
     course_entrepreneur_title: "Master Diventa un Imprenditore",
     course_entrepreneur_desc: "Acquisizione di leadership commerciale, pianificazione aziendale e know how operativo per avviare il tuo business indipendente.",
     btn_more_info: "Maggiori Informazioni",
+    status_coming_soon: "In Arrivo",
 
     /* Candidate Screening Questionnaires */
     form_title: "Candidati e Compila il Modulo",
@@ -211,8 +212,9 @@ const VELORA_TRANSLATIONS = {
     course_real_desc: "Professional qualification track designed to build an independent career in residential and commercial real estate brokerage.",
     
     course_entrepreneur_title: "Master Become an Entrepreneur",
-    course_entrepreneur_desc: "Executive business leadership training, strategic company planning, and operational know how to launch your independent enterprise.",
+    course_entrepreneur_desc: "Executive business leadership training, strategic company planning, and operational know-how to launch your independent enterprise.",
     btn_more_info: "Learn More",
+    status_coming_soon: "Coming Soon",
 
     /* Candidate Screening Questionnaires */
     form_title: "Submit Your Application Questionnaire",
