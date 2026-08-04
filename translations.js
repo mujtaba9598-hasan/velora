@@ -129,6 +129,14 @@ const VELORA_TRANSLATIONS = {
     student_cta_title: "Non sei ancora iscritto ai nostri Master o Corsi?",
     student_cta_desc: "Richiedi subito il modulo di iscrizione con programma completo e scopri come finanziare la tua formazione in 4 comode rate.",
     student_cta_btn: "Compila la Candidatura e Iscriviti",
+
+    /* Calendar (calendario.html) Vocabulary */
+    cal_hero_badge: "Calendario Didattico e Orari Sportelli Convenzionati",
+    cal_hero_title: "Calendario dei Corsi e Orari di Ricevimento Sportelli",
+    cal_hero_sub: "Consulta le Date d'Avvio dei Prossimi Master Professionali e Prenota un Appuntamento di Orientamento Gratuito",
+    cal_hero_desc: "Pianifica il tuo percorso didattico verificando le date di inizio delle nostre classi a numero chiuso (massimo 20 studenti). Il nostro sportello di segreteria è attivo tutta la settimana con fasce di ricevimento mattutine e pomeridiane per colloqui individuali, pratiche di finanziamento in 4 rate e prenotazioni esami di lingua italiana A2 e B1.",
+    cal_btn_book: "Prenota Fascia Oraria di Consulenza",
+    cal_btn_timetable: "Vedi Tabella Orari Sportelli",
     free_card_1_title: "Assistente Operatore di CAF e Patronato",
     free_card_1_desc: "Acquisisci le competenze di base necessarie per lavorare come operatore di sportello presso centri di assistenza fiscale e patronati territoriali, offrendo supporto preliminare sui moduli 730, assegno unico e pensionistica.",
     free_card_1_tag: "★ 100% Finanziato con Attestato di Frequenza",
@@ -285,6 +293,14 @@ const VELORA_TRANSLATIONS = {
     student_cta_title: "Not Yet Enrolled in Our Masters or Courses?",
     student_cta_desc: "Request full syllabi and flexible 4 installment tuition financing options.",
     student_cta_btn: "Apply & Register Now",
+
+    /* Calendar (calendario.html) Vocabulary */
+    cal_hero_badge: "Academic Calendar & Partner Desk Hours",
+    cal_hero_title: "Course Schedules & Consultation Desk Hours",
+    cal_hero_sub: "Review Upcoming Master Start Dates & Book a Free Academic Advisory Appointment",
+    cal_hero_desc: "Plan your learning pathway by checking the launch dates of our limited-enrollment classes (maximum 20 students per cohort). Our administrative desk operates all week with morning and afternoon hours for 1-on-1 interviews, 4-installment tuition financing applications, and A2 / B1 Italian language test bookings.",
+    cal_btn_book: "Book Consultation Slot",
+    cal_btn_timetable: "View Desk Hours Schedule",
     free_card_1_title: "CAF & Welfare Office Assistant",
     free_card_1_desc: "Acquire foundational skills to serve as a desk operator in CAF and welfare offices, assisting citizens with 730 tax returns and family allowance claims.",
     free_card_1_tag: "★ 100% Subsidized with Official Certificate",

@@ -1535,6 +1535,102 @@ header.navbar, header.header, .header-old, #old-header {
 }
 
 /* ==========================================================================
+   Fixed Sizing for Language Switcher Button (Prevents Navbar Layout Shift)
+   ========================================================================== */
+#global-lang-toggle,
+.lang-toggle-btn {
+  width: 86px !important;
+  min-width: 86px !important;
+  max-width: 86px !important;
+  height: 36px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+}
+
+/* ==========================================================================
+   Site-Wide Floating WhatsApp & Phone Call Action Buttons
+   ========================================================================== */
+.floating-action-bar {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 999999;
+  pointer-events: auto;
+}
+
+.floating-action-btn {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), 0 0 15px rgba(250, 250, 250, 0.15);
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.25s ease;
+  position: relative;
+  backdrop-filter: blur(8px);
+}
+
+.floating-action-btn:hover {
+  transform: scale(1.12) translateY(-2px);
+}
+
+.floating-btn-whatsapp {
+  background: #25D366;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+}
+
+.floating-btn-whatsapp:hover {
+  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6), 0 0 20px rgba(37, 211, 102, 0.8);
+}
+
+.floating-btn-phone {
+  background: #C89D42;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 24px rgba(200, 157, 66, 0.4);
+}
+
+.floating-btn-phone:hover {
+  box-shadow: 0 12px 30px rgba(200, 157, 66, 0.6), 0 0 20px rgba(200, 157, 66, 0.8);
+}
+
+.floating-btn-tooltip {
+  position: absolute;
+  right: 64px;
+  background: #0B1628;
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(200, 157, 66, 0.4);
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  pointer-events: none;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+}
+
+.floating-action-btn:hover .floating-btn-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-4px);
+}
+
+/* ==========================================================================
    React Bits MagicBento Component Styling
    ========================================================================== */
 .card-grid.bento-section {
