@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
   initializeParticleTextEngine();
   initializeStrokeTextEngine();
   initializeCircularGallery();
+  initializeMagicBentoEngine();
+  initializePixelCardEngine();
   injectGlobalWidgets();
 });
 
@@ -468,3 +470,128 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
+
+/* ==========================================================================
+   React Bits PixelCard Native Canvas Animation Driver
+   ========================================================================== */
+function initializePixelCardEngine() {
+  const cards = document.querySelectorAll('.pixel-card');
+  cards.forEach(card => {
+    let canvas = card.querySelector('canvas.pixel-canvas');
+    if (!canvas) {
+      canvas = document.createElement('canvas');
+      canvas.className = 'pixel-canvas';
+      card.insertBefore(canvas, card.firstChild);
+    }
+
+    const ctx = canvas.getContext('2d');
+    let pixels = [];
+    let animationId = null;
+    let timePrevious = performance.now();
+    const colors = '#e3ba5e,#c89d42,#f8fafc'.split(',');
+
+    function initPixels() {
+      const rect = card.getBoundingClientRect();
+      const width = Math.floor(rect.width);
+      const height = Math.floor(rect.height);
+
+      canvas.width = width;
+      canvas.height = height;
+
+      pixels = [];
+      const gap = 6;
+      for (let x = 0; x < width; x += gap) {
+        for (let y = 0; y < height; y += gap) {
+          const color = colors[Math.floor(Math.random() * colors.length)];
+          const dx = x - width / 2;
+          const dy = y - height / 2;
+          const distance = Math.sqrt(dx * dx + dy * dy);
+          
+          pixels.push({
+            x, y, color,
+            size: 0,
+            maxSize: Math.random() * 1.5 + 0.5,
+            sizeStep: Math.random() * 0.3 + 0.1,
+            speed: (Math.random() * 0.8 + 0.1) * 0.035,
+            counter: 0,
+            counterStep: Math.random() * 4 + (width + height) * 0.01,
+            delay: distance,
+            isIdle: false,
+            isReverse: false,
+            isShimmer: false
+          });
+        }
+      }
+    }
+
+    function drawPixel(p) {
+      const centerOffset = 1 - p.size * 0.5;
+      ctx.fillStyle = p.color;
+      ctx.fillRect(p.x + centerOffset, p.y + centerOffset, p.size, p.size);
+    }
+
+    function appear(p) {
+      p.isIdle = false;
+      if (p.counter <= p.delay) {
+        p.counter += p.counterStep;
+        return;
+      }
+      if (p.size >= p.maxSize) {
+        p.isShimmer = true;
+      }
+      if (p.isShimmer) {
+        if (p.size >= p.maxSize) p.isReverse = true;
+        else if (p.size <= 0.5) p.isReverse = false;
+        p.size += p.isReverse ? -p.speed : p.speed;
+      } else {
+        p.size += p.sizeStep;
+      }
+      drawPixel(p);
+    }
+
+    function disappear(p) {
+      p.isShimmer = false;
+      p.counter = 0;
+      if (p.size <= 0) {
+        p.isIdle = true;
+      } else {
+        p.size -= 0.1;
+        drawPixel(p);
+      }
+    }
+
+    function animate(action) {
+      if (animationId) cancelAnimationFrame(animationId);
+
+      function loop() {
+        const timeNow = performance.now();
+        const timePassed = timeNow - timePrevious;
+        if (timePassed >= 1000 / 60) {
+          timePrevious = timeNow - (timePassed % (1000 / 60));
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+          let allIdle = true;
+          pixels.forEach(p => {
+            if (action === 'appear') appear(p);
+            else disappear(p);
+            if (!p.isIdle) allIdle = false;
+          });
+
+          if (allIdle && action === 'disappear') {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            return;
+          }
+        }
+        animationId = requestAnimationFrame(loop);
+      }
+
+      loop();
+    }
+
+    initPixels();
+    card.addEventListener('mouseenter', () => animate('appear'));
+    card.addEventListener('mouseleave', () => animate('disappear'));
+    window.addEventListener('resize', initPixels);
+  });
+}
+

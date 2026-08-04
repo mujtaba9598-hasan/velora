@@ -181,95 +181,132 @@ document.addEventListener("DOMContentLoaded", function () {
   /* ==========================================================================
      Master UI Harmonizer: Universal React Bits CardNav & Site-Wide I18N
      ========================================================================== */
+  /* ==========================================================================
+     Master UI Harmonizer: Universal Magnetic Dock Navigation Engine
+     ========================================================================== */
   function enforceGlobalConsistency(lang) {
     const isEnglish = (lang === "en");
 
-    /* 1. Remove old inconsistent headers and inject identical floating CardNav across ALL pages */
-    document.querySelectorAll("header.header, .header-old, #old-header").forEach(h => h.style.display = "none");
+    /* Hide any legacy headers */
+    document.querySelectorAll("header.header, .header-old, #old-header, .navbar").forEach(h => h.style.display = "none");
     
-    let cardNavContainer = document.getElementById("velora-card-nav-container");
-    if (!cardNavContainer) {
-      cardNavContainer = document.createElement("div");
-      cardNavContainer.id = "velora-card-nav-container";
-      cardNavContainer.className = "card-nav-container";
-      document.body.insertBefore(cardNavContainer, document.body.firstChild);
+    let dockWrapper = document.getElementById("velora-magnetic-dock-wrapper");
+    if (!dockWrapper) {
+      dockWrapper = document.createElement("div");
+      dockWrapper.id = "velora-magnetic-dock-wrapper";
+      dockWrapper.className = "magnetic-dock-wrapper";
+      document.body.insertBefore(dockWrapper, document.body.firstChild);
     }
 
-    cardNavContainer.innerHTML = `
-      <nav class="card-nav" id="official-card-nav">
-        <div class="card-nav-top">
-          <div class="hamburger-menu" id="nav-hamburger" role="button" tabindex="0" aria-label="Toggle Menu">
-            <div class="hamburger-line"></div>
-            <div class="hamburger-line"></div>
+    const currentPath = window.location.pathname.split("/").pop() || "index.html";
+
+    dockWrapper.innerHTML = `
+      <a href="index.html" class="brand-logo" title="Velora Formazione Home">
+        <img src="assets/images/logo_velora.png" alt="Velora Formazione">
+        VELORA
+      </a>
+
+      <nav class="magnetic-dock-container" id="magnetic-dock-nav">
+        <!-- 1. Home -->
+        <a href="index.html" class="dock-item-btn ${currentPath === 'index.html' ? 'active' : ''}">
+          ${isEnglish ? "Home" : "Home"}
+          <span class="dock-item-tooltip">Accademia Velora</span>
+          ${currentPath === 'index.html' ? '<span class="dock-active-dot"></span>' : ''}
+        </a>
+
+        <!-- 2. About -->
+        <a href="chi_siamo.html" class="dock-item-btn ${currentPath === 'chi_siamo.html' ? 'active' : ''}">
+          ${isEnglish ? "About Us" : "Chi Siamo"}
+          <span class="dock-item-tooltip">La Nostra Storia</span>
+          ${currentPath === 'chi_siamo.html' ? '<span class="dock-active-dot"></span>' : ''}
+        </a>
+
+        <!-- 3. Student Area (Highlighted) -->
+        <a href="area_studente.html" class="dock-item-btn highlighted-item ${currentPath === 'area_studente.html' ? 'active' : ''}">
+          ${isEnglish ? "Student Area" : "Area Studente"}
+          <span class="dock-item-tooltip">Portale Didattico</span>
+          ${currentPath === 'area_studente.html' ? '<span class="dock-active-dot"></span>' : ''}
+        </a>
+
+        <!-- 4. Schedule -->
+        <a href="calendario.html" class="dock-item-btn ${currentPath === 'calendario.html' ? 'active' : ''}">
+          ${isEnglish ? "Schedule" : "Calendario & Orari"}
+          <span class="dock-item-tooltip">Date e Lezioni</span>
+          ${currentPath === 'calendario.html' ? '<span class="dock-active-dot"></span>' : ''}
+        </a>
+
+        <!-- 5. Corsi & Master Dropdown (Preserving all pages) -->
+        <div class="dock-dropdown-container">
+          <div class="dock-item-btn">
+            ${isEnglish ? "Courses ▼" : "Corsi & Master ▼"}
+            <span class="dock-item-tooltip">Catalogo Formativo</span>
           </div>
-
-          <a href="index.html" class="logo-container" title="Velora Formazione Home">
-            <img src="assets/images/logo_velora.png" onerror="this.style.display='none';this.onerror=null;" alt="Velora Logo">
-            <span>VELORA</span>
-          </a>
-
-          <div style="display: flex; align-items: center; gap: 12px;">
-            <button type="button" class="btn lang-toggle-btn specular-button specular-button--sm" id="global-lang-toggle" style="padding: 6px 14px; min-height: 38px; font-weight: bold;">
-              ${isEnglish ? "🇮🇹 IT" : "🇬🇧 EN"}
-            </button>
-            <a href="area_studente.html" class="btn btn-primary card-nav-cta-button specular-button" style="min-height: 38px; display: inline-flex; align-items: center;">
-              ${isEnglish ? "Student Area" : "Area Studente"}
-            </a>
+          <div class="dock-dropdown-menu">
+            <a href="master_caf.html">Master CAF e Patronato <span>→</span></a>
+            <a href="operatore_fiscale.html">Operatore Fiscale 360° <span>→</span></a>
+            <a href="esame_italiano.html">Esami Lingua Italiana <span>→</span></a>
+            <a href="corsi_gratuiti.html">Corsi Gratuiti Disoccupati <span>→</span></a>
+            <a href="master_imprenditore.html">Master Imprenditore <span>→</span></a>
+            <a href="manuali.html">Manuale Ufficiale <span>→</span></a>
+            <a href="trasparenza.html">Trasparenza Civica <span>→</span></a>
           </div>
         </div>
 
-        <div class="card-nav-content" aria-hidden="true">
-          <!-- Card 1: Academy & About -->
-          <div class="nav-card" style="background-color: #0F1A2E; color: #fff;">
-            <div class="nav-card-label">${isEnglish ? "Academy" : "Accademia"}</div>
-            <div class="nav-card-links">
-              <a class="nav-card-link" href="index.html"><span class="nav-card-link-icon">↗</span> ${isEnglish ? "Home" : "Home"}</a>
-              <a class="nav-card-link" href="chi_siamo.html"><span class="nav-card-link-icon">↗</span> ${isEnglish ? "About Us" : "Chi Siamo"}</a>
-              <a class="nav-card-link" href="manuali.html"><span class="nav-card-link-icon">↗</span> ${isEnglish ? "Official Handbook" : "Manuale Ufficiale"}</a>
-            </div>
-          </div>
+        <!-- 6. Work With Us (At the end of sequence) -->
+        <a href="lavora_con_noi.html" class="dock-item-btn ${currentPath === 'lavora_con_noi.html' ? 'active' : ''}">
+          ${isEnglish ? "Work With Us" : "Lavora Con Noi"}
+          <span class="dock-item-tooltip">Affiliati & Carriera</span>
+          ${currentPath === 'lavora_con_noi.html' ? '<span class="dock-active-dot"></span>' : ''}
+        </a>
 
-          <!-- Card 2: Portals & Dates -->
-          <div class="nav-card" style="background-color: #162238; color: #fff;">
-            <div class="nav-card-label">${isEnglish ? "Portals & Schedule" : "Corsi & Orari"}</div>
-            <div class="nav-card-links">
-              <a class="nav-card-link" href="area_studente.html" style="color: #E3BA5E !important; font-weight: 700;"><span class="nav-card-link-icon">↗</span> ${isEnglish ? "Student Area" : "Area Studente"}</a>
-              <a class="nav-card-link" href="calendario.html"><span class="nav-card-link-icon">↗</span> ${isEnglish ? "Schedule & Timetables" : "Calendario & Orari"}</a>
-              <a class="nav-card-link" href="corsi_gratuiti.html"><span class="nav-card-link-icon">↗</span> ${isEnglish ? "Free Courses" : "Corsi Gratuiti"}</a>
-            </div>
-          </div>
+        <!-- 7. Contact Us -->
+        <a href="contatti.html" class="dock-item-btn ${currentPath === 'contatti.html' ? 'active' : ''}">
+          ${isEnglish ? "Contact Us" : "Contatti"}
+          <span class="dock-item-tooltip">Sede e Informazioni</span>
+          ${currentPath === 'contatti.html' ? '<span class="dock-active-dot"></span>' : ''}
+        </a>
 
-          <!-- Card 3: Connect & Careers -->
-          <div class="nav-card" style="background-color: #1D2A44; color: #fff;">
-            <div class="nav-card-label">${isEnglish ? "Connect" : "Connettiti"}</div>
-            <div class="nav-card-links">
-              <a class="nav-card-link" href="contatti.html"><span class="nav-card-link-icon">↗</span> ${isEnglish ? "Contact Us" : "Contatti"}</a>
-              <a class="nav-card-link" href="lavora_con_noi.html"><span class="nav-card-link-icon">↗</span> ${isEnglish ? "Work With Us" : "Lavora Con Noi"}</a>
-            </div>
-          </div>
-        </div>
+        <!-- 8. Portal Login Button -->
+        <a href="accedi.html" class="dock-item-btn specular-button specular-button--sm" style="background: rgba(200, 157, 66, 0.25); border-color: rgba(200, 157, 66, 0.6);">
+          ${isEnglish ? "Sign In" : "Accedi"}
+        </a>
+
+        <!-- 9. Language Switcher -->
+        <button type="button" class="dock-item-btnSpecular specular-button specular-button--sm" id="global-lang-toggle" style="padding: 6px 12px; font-weight: bold; border-radius: 14px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.2); color: #fff; cursor: pointer;">
+          ${isEnglish ? "🇮🇹 IT" : "🇬🇧 EN"}
+        </button>
       </nav>
     `;
 
-    /* Attach hamburger open/close toggle functionality */
-    const navEl = document.getElementById("official-card-nav");
-    const hamb = document.getElementById("nav-hamburger");
-    if (hamb && navEl) {
-      hamb.addEventListener("click", function() {
-        const isClosed = !navEl.classList.contains("open");
-        if (isClosed) {
-          navEl.classList.add("open");
-          hamb.classList.add("open");
-          navEl.style.height = window.innerWidth <= 768 ? "390px" : "280px";
-        } else {
-          navEl.classList.remove("open");
-          hamb.classList.remove("open");
-          navEl.style.height = "64px";
-        }
+    /* Attach interactive magnetic proximity scale calculation */
+    const container = document.getElementById("magnetic-dock-nav");
+    if (container) {
+      const items = container.querySelectorAll(".dock-item-btn");
+      container.addEventListener("mousemove", function(e) {
+        const mouseX = e.clientX;
+        items.forEach(function(item) {
+          const rect = item.getBoundingClientRect();
+          const itemCenter = rect.left + rect.width / 2;
+          const distance = Math.abs(mouseX - itemCenter);
+          const maxDistance = 140;
+          if (distance < maxDistance) {
+            const scale = 1 + (1 - distance / maxDistance) * 0.25;
+            const translateY = (1 - distance / maxDistance) * -6;
+            item.style.transform = `scale(${scale}) translateY(${translateY}px)`;
+          } else {
+            item.style.transform = "scale(1) translateY(0px)";
+          }
+        });
+      });
+
+      container.addEventListener("mouseleave", function() {
+        items.forEach(function(item) {
+          item.style.transform = "scale(1) translateY(0px)";
+        });
       });
     }
 
-    /* Attach language toggle event listener */
+    /* Attach language switcher listener */
     const langBtn = document.getElementById("global-lang-toggle");
     if (langBtn) {
       langBtn.addEventListener("click", function(e) {
@@ -279,6 +316,7 @@ document.addEventListener("DOMContentLoaded", function () {
         applyTranslations(currentLanguage);
       });
     }
+
 
     /* 2. Enforce React Bits Specular Button interactive shader style site-wide */
     document.querySelectorAll(".btn, .card-nav-cta-button, button[type='submit'], .btn-primary, .btn-secondary").forEach(function(btn) {

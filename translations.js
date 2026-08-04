@@ -31,8 +31,8 @@ const VELORA_TRANSLATIONS = {
     catalog_title: "I Nostri Percorsi di Formazione e Servizi Civici",
     catalog_subtitle: "Competenze immediatamente spendibili nel mercato del lavoro con supporto continuo dei docenti.",
     
-    course_caf_title: "Master Operatore CAF e Patronato",
-    course_caf_desc: "Percorso completo per assistere cittadini e imprese nella gestione di pratiche fiscali e previdenziali con tirocinio formativo garantito.",
+    course_caf_title: "Master Diventa un Imprenditore",
+    course_caf_desc: "Formazione di alta direzione aziendale, pianificazione strategica e know-how operativo per avviare la tua impresa indipendente.",
     
     course_fiscale_title: "Operatore Fiscale 360 Gradi",
     course_fiscale_desc: "Corso intensivo di 42 ore su Partita IVA, regime forfettario, fattura elettronica e portali ufficiali INPS e Agenzia delle Entrate.",
@@ -71,6 +71,46 @@ const VELORA_TRANSLATIONS = {
     cookie_text: "Utilizziamo i cookie per garantire la migliore prestazione e sicurezza sul nostro sito aziendale.",
     btn_accept: "Accetta Tutti",
     btn_reject: "Rifiuta Tutti",
+
+    /* About Us (chi_siamo.html) Vocabulary */
+    about_hero_badge: "Ente del Terzo Settore e Accademia Qualificata",
+    about_hero_title: "Chi Siamo e la Nostra Visione Istituzionale",
+    about_hero_desc: "Velora Formazione opera come Ente di Formazione qualificato a livello nazionale, dedicato interamente allo sviluppo delle competenze civiche, fiscali e imprenditoriali con standard di altissimo rigore didattico.",
+    about_section_badge: "Modelli di Didattica Agile",
+    about_section_title: "Supportiamo la Crescita con Upskilling, Reskilling e Formazione Continua",
+    about_section_p1: "La nostra proposta di valore è semplice e trasparente: trasmettere competenze immediatamente spendibili nel mondo del lavoro attraverso modelli di didattica agile, docenze frontali interattive, studi di caso di studio complessi, project work operativi e affiancamento tutoraggio individuale.",
+    about_section_p2: "Accompagniamo studenti universitari, lavoratori, professionisti e imprese nei loro percorsi di evoluzione e orientamento, promuovendo il potenziamento professionale (upskilling), la riqualificazione di carriera per disoccupati (reskilling) e progetti formativi finanziati su scala nazionale.",
+    about_stat_1_num: "10+ Anni",
+    about_stat_1_txt: "Esperienza accademica e consulenza aziendale",
+    about_stat_2_num: "95% Tasso",
+    about_stat_2_txt: "Di soddisfazione e inserimento operativo",
+
+    /* Free Courses (corsi_gratuiti.html) Vocabulary */
+    free_title: "Corsi Gratuiti per Disoccupati e Lavoratori",
+    free_subtitle: "Corsi Disponibili per il Taglio Operativo e Riqualificazione",
+    free_intro: "Selezioniamo tematiche ad altissima richiesta contrattuale negli studi di consulenza amministrativa e contabile di tutta la Lombardia e Italia.",
+
+    /* Master Imprenditore Vocabulary */
+    entrep_title: "Master Diventa Imprenditore e Corso Agente Immobiliare",
+    entrep_subtitle: "Trasferiamo Competenza Strategica, Finanziaria e Negoziale per Permettersi il Sogno di Mettersi in Proprio",
+    free_card_1_title: "Assistente Operatore di CAF e Patronato",
+    free_card_1_desc: "Acquisisci le competenze di base necessarie per lavorare come operatore di sportello presso centri di assistenza fiscale e patronati territoriali, offrendo supporto preliminare sui moduli 730, assegno unico e pensionistica.",
+    free_card_1_tag: "★ 100% Finanziato con Attestato di Frequenza",
+    free_card_2_title: "Contabile Amministrativo e Segreteria Studio",
+    free_card_2_desc: "Corso orientato alla gestione di prima nota, smistamento posta elettronica certificata, archiviazione di fatture elettroniche XML e amministrazione ordinaria per uffici commerciali e legali.",
+    free_card_2_tag: "★ Pratica su Piattaforme Digitali Ufficio",
+    free_card_3_title: "Informatica per il Lavoro e Strumenti Cloud",
+    free_card_3_desc: "Padroneggia l'uso del pacchetto Office (Excel, Word), posta certificata, identità SPID, navigazione sicura su piattaforme della Pubblica Amministrazione e tool per il coworking remoto.",
+    free_card_3_tag: "★ Competenze Digitali Essenziali nel Lavoro",
+    free_card_4_title: "Sicurezza sul Lavoro e Compliance Normativa",
+    free_card_4_desc: "Modulo sulla salute e sicurezza nei luoghi di lavoro (rischio basso e intermedio, normativa aziendale), qualifica contrattualmente indispensabile per ogni nuova assunzione o inserimento in stage.",
+    free_card_4_tag: "★ Conformità e Riconoscimento D.Lgs 81/08",
+    free_card_5_title: "Lingua Italiana Tecnica per Stranieri in Lavoro",
+    free_card_5_desc: "Impara o perfeziona la lingua italiana con focus sul vocabolario lavorativo, sicurezza aziendale e contrattualistica in vista degli esami di certificazione ufficiale di cittadinanza o soggiorno.",
+    free_card_5_tag: "★ Supporto di Docenti e Tutor Madrelingua",
+    free_card_6_title: "Marketing Digitale e Comunicazione Social",
+    free_card_6_desc: "Apprendi le tecniche di base per gestire le pagine aziendali sui principali network (Facebook, LinkedIn, Instagram) e promuovere servizi e contratti per PMI e artigiani locali.",
+    free_card_6_tag: "★ Didattica Agile e Casi Studio Interattivi",
 
     /* Footer and Trust Message */
     footer_desc: "Ente di formazione professionale dedicato allo sviluppo di competenze civiche, fiscali e aziendali in tutta Italia.",
@@ -111,8 +151,8 @@ const VELORA_TRANSLATIONS = {
     catalog_title: "Our Training Pathways and Civic Services",
     catalog_subtitle: "Immediately operational workplace skills backed by continuous mentorship from industry professionals.",
     
-    course_caf_title: "Master CAF and Welfare Operator",
-    course_caf_desc: "Comprehensive training program to guide citizens and enterprises through tax filing and welfare documentation with guaranteed internship opportunities.",
+    course_caf_title: "Master Become an Entrepreneur",
+    course_caf_desc: "Executive business leadership training, strategic company planning, and operational know how to launch your independent enterprise.",
     
     course_fiscale_title: "360 Degree Fiscal Operator",
     course_fiscale_desc: "Intensive 42 hour curriculum mastering VAT flat tax regimes, electronic invoicing, certified email, and official agency portal operations.",
@@ -151,6 +191,46 @@ const VELORA_TRANSLATIONS = {
     cookie_text: "We utilize cookies to guarantee optimal performance and security across our institutional platform.",
     btn_accept: "Accept All",
     btn_reject: "Reject All",
+
+    /* About Us (chi_siamo.html) Vocabulary */
+    about_hero_badge: "Third Sector Entity and Certified Academy",
+    about_hero_title: "About Us and Our Institutional Vision",
+    about_hero_desc: "Velora Formazione operates as a certified national training institution dedicated entirely to developing civic, fiscal, and entrepreneurial skills with top academic standards.",
+    about_section_badge: "Agile Teaching Methodologies",
+    about_section_title: "Empowering Career Growth through Upskilling, Reskilling, and Continuous Mentorship",
+    about_section_p1: "Our value proposition is clear and transparent: delivering skills immediately applicable in the workplace through agile teaching models, interactive lectures, complex case studies, and personalized tutoring.",
+    about_section_p2: "We accompany university students, working professionals, and enterprises through career evolution, promoting upskilling, job-seeker reskilling, and nationwide funded training programs.",
+    about_stat_1_num: "10+ Years",
+    about_stat_1_txt: "Academic experience and corporate consulting",
+    about_stat_2_num: "95% Rate",
+    about_stat_2_txt: "Operational placement and student satisfaction",
+
+    /* Free Courses (corsi_gratuiti.html) Vocabulary */
+    free_title: "Free Subsidized Courses for Job Seekers",
+    free_subtitle: "Available Operational Qualification Courses",
+    free_intro: "Selected high-demand subjects for administrative and accounting consultancies across Italy.",
+
+    /* Master Imprenditore Vocabulary */
+    entrep_title: "Master Become an Entrepreneur & Real Estate Track",
+    entrep_subtitle: "Strategic, Financial & Negotiation Skills to Launch Your Independent Business",
+    free_card_1_title: "CAF & Welfare Office Assistant",
+    free_card_1_desc: "Acquire foundational skills to serve as a desk operator in CAF and welfare offices, assisting citizens with 730 tax returns and family allowance claims.",
+    free_card_1_tag: "★ 100% Subsidized with Official Certificate",
+    free_card_2_title: "Administrative Accountant & Office Administration",
+    free_card_2_desc: "Practical curriculum focused on ledger entries, certified PEC email handling, XML electronic invoicing, and administrative office workflows.",
+    free_card_2_tag: "★ Hands-on Digital Software Simulation",
+    free_card_3_title: "Workplace IT & Cloud Productivity Tools",
+    free_card_3_desc: "Master Microsoft Office (Excel, Word), certified PEC email, SPID digital ID, public administration portals, and remote collaboration tools.",
+    free_card_3_tag: "★ Essential Workplace Digital Competencies",
+    free_card_4_title: "Workplace Safety & Legislative Compliance",
+    free_card_4_desc: "Health and safety certification (D.Lgs 81/08), mandatory for new hires and internship placements across all Italian enterprises.",
+    free_card_4_tag: "★ Official D.Lgs 81/08 Compliance Certificate",
+    free_card_5_title: "Technical Business Italian for Foreign Workers",
+    free_card_5_desc: "Learn technical workplace Italian focused on office vocabulary, workplace safety, and employment contracts for citizenship or residence exams.",
+    free_card_5_tag: "★ Native Speaking Tutors & Instructors",
+    free_card_6_title: "Digital Marketing & Social Communication",
+    free_card_6_desc: "Practical strategies to manage business social pages (Facebook, LinkedIn, Instagram) and market services for local SMEs.",
+    free_card_6_tag: "★ Agile Learning & Real-World Case Studies",
 
     /* Footer and Trust Message */
     footer_desc: "Professional training institution dedicated to advancing civic, fiscal, and business qualifications across Italy.",
