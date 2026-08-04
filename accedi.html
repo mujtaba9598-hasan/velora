@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Velora Formazione Accedi - Portale di autenticazione sicura per studenti dei master e corsi di formazione professionale.">
+  <title>Accedi al Portale | Velora Formazione</title>
+  
+  <link rel="stylesheet" href="style.css">
+  <script src="translations.js" defer></script>
+  <script src="app.js" defer></script>
+  <script src="animations.js" defer></script>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Sticky Top Navigation Header
+       ========================================================================== -->
+  <header class="navbar">
+    <div class="container flex-between">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/images/logo_velora.png" alt="Velora Formazione">
+        VELORA FORMAZIONE
+      </a>
+
+      <nav aria-label="Main navigation">
+        <ul id="nav-links-menu" class="nav-links">
+          <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+          <li><a href="chi_siamo.html" data-i18n="nav_about">Chi Siamo</a></li>
+          <li><a href="calendario.html" data-i18n="nav_calendar">Calendario</a></li>
+          <li><a href="lavora_con_noi.html" data-i18n="nav_careers">Lavora con Noi</a></li>
+          <li><a href="contatti.html" data-i18n="nav_contacts">Contatti</a></li>
+          <li><a href="area_studente.html" data-i18n="nav_student_area">Area Studente</a></li>
+        </ul>
+      </nav>
+
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <button id="lang-toggle" class="lang-toggle-btn">🇬🇧 English</button>
+        <a href="accedi.html" class="btn btn-primary" style="padding: 8px 18px; font-size: 0.9rem;" data-i18n="nav_login">Accedi</a>
+        <button id="mobile-menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Secure Student Authentication and Login Card Container
+       ========================================================================== -->
+  <main>
+    <section class="section-padding" style="min-height: 80vh; display: flex; align-items: center; background: radial-gradient(circle at 50% 50%, #162C50 0%, #070D18 90%);">
+      <div class="container">
+        <div class="form-card" style="max-width: 520px; margin: 0 auto; padding: 48px 40px; text-align: center; border-color: #C89D42;">
+          <div style="width: 70px; height: 70px; border-radius: 50%; background: rgba(200, 157, 66, 0.15); border: 1px solid #C89D42; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px auto; font-size: 2rem; color: #D1A142;">
+            🔒
+          </div>
+          
+          <h1 style="font-size: 2.2rem; margin-bottom: 8px;">Accesso Riservato</h1>
+          <p style="color: #94A3B8; font-size: 0.95rem; margin-bottom: 32px;">
+            Inserisci le credenziali del tuo account allievo o partner aziendale per entrare nell'area didattica riservata.
+          </p>
+
+          <form id="login-form-verification" style="text-align: left;">
+            <div class="form-group">
+              <label for="username-input" class="form-label">Posta Elettronica o Codice Allievo</label>
+              <input 
+                id="username-input" 
+                type="email" 
+                class="form-input" 
+                placeholder="nome.cognome@studiofiscale.it" 
+                required 
+                aria-required="true">
+            </div>
+
+            <div class="form-group">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <label for="password-input" class="form-label" style="margin-bottom: 0;">Password di Accesso</label>
+                <a href="contatti.html" style="color: #C89D42; font-size: 0.85rem; text-decoration: underline;">Credenziali Dimenticate?</a>
+              </div>
+              <input 
+                id="password-input" 
+                type="password" 
+                class="form-input" 
+                placeholder="••••••••••••" 
+                required 
+                aria-required="true">
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 28px;">
+              <input id="remember-me" type="checkbox" style="width: 18px; height: 18px; accent-color: #C89D42;">
+              <label for="remember-me" style="font-size: 0.9rem; color: #F8FAFC;">Resta collegato sul dispositivo</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1.05rem; padding: 14px;">
+              Entra nell'Area Studente
+            </button>
+          </form>
+
+          <!-- ==========================================================================
+               Technical Assistance and Credential Recovery Guidance
+               ========================================================================== -->
+          <div style="margin-top: 36px; padding-top: 24px; border-top: 1px solid rgba(255, 255, 255, 0.15);">
+            <p style="font-size: 0.9rem; color: #94A3B8; margin-bottom: 12px;">
+              Non sei ancora registrato ai nostri corsi professionalizzanti o master?
+            </p>
+            <a href="calendario.html" class="btn btn-secondary" style="width: 100%; font-size: 0.9rem;">
+              Richiedi Candidatura e Colloquio Telefonico
+            </a>
+            
+            <div style="margin-top: 20px; font-size: 0.85rem; color: #94A3B8;">
+              Hai bisogno di assistenza tecnica immediata? 
+              <br>
+              <a href="mailto:info@veloragroupacademy.com" style="color: #C89D42; font-weight: 600;">info@veloragroupacademy.com</a> | Tel: <a href="tel:+393276269708" style="color: #F8FAFC;">+39 327 626 9708</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Comprehensive Company Footer and Giant Stroke Wordmark Engine
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-columns">
+        <div class="footer-col">
+          <a href="index.html" class="brand-logo" style="margin-bottom: 18px;">
+            <img src="assets/images/logo_velora.png" alt="Velora Formazione"> VELORA FORMAZIONE
+          </a>
+          <p data-i18n="footer_desc" style="font-size: 0.95rem; margin-bottom: 16px;">
+            Ente di formazione professionale dedicato allo sviluppo di competenze civiche, fiscali e aziendali in tutta Italia.
+          </p>
+          <p class="gold-highlight" data-i18n="footer_trust" style="font-size: 0.95rem; border-left: 2px solid #C89D42; padding-left: 12px; line-height: 1.4;">
+            Grazie per la tua fiducia: Velora Formazione è lieta di accompagnarti nel tuo percorso di crescita professionale.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="col_courses">I Nostri Corsi</h4>
+          <ul>
+            <li><a href="master_caf.html" data-i18n="course_caf_title">Master Operatore CAF e Patronato</a></li>
+            <li><a href="operatore_fiscale.html" data-i18n="course_fiscale_title">Operatore Fiscale 360 Gradi</a></li>
+            <li><a href="esame_italiano.html" data-i18n="course_lang_title">Esame di Lingua Italiana A2 e B1</a></li>
+            <li><a href="corsi_gratuiti.html" data-i18n="course_free_title">Corsi Gratuiti per Disoccupati</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="col_info">Informazioni</h4>
+          <ul>
+            <li><a href="chi_siamo.html" data-i18n="nav_about">Chi Siamo</a></li>
+            <li><a href="lavora_con_noi.html" data-i18n="nav_careers">Lavora con Noi</a></li>
+            <li><a href="contatti.html" data-i18n="nav_contacts">Contatti</a></li>
+            <li><a href="trasparenza.html" data-i18n="link_transparency">Rendicontazione e Trasparenza</a></li>
+          </ul>
+          <div class="social-icons" aria-label="Social media profiles">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" title="Facebook">F</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" title="LinkedIn">in</a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" title="Instagram">I</a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" title="TikTok">T</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <!-- Giant Stroke Drawing Wordmark mounts within this dedicated container -->
+      <div id="footer-stroke-container" class="stroke-container" aria-hidden="true"></div>
+
+      <div class="text-center" style="padding-bottom: 40px; font-size: 0.85rem;">
+        <p data-i18n="copyright">© 2026 Velora Formazione. Tutti i diritti riservati.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* Simulated authentication verification trigger */
+    document.getElementById("login-form-verification")?.addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Autenticazione verificata con successo: reindirizzamento al portale didattico Area Studente in corso.");
+      window.location.href = "area_studente.html";
+    });
+  </script>
+</body>
+</html>

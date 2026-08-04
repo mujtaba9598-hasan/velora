@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Velora Formazione Calendario e Orari - Date di inizio corsi Master CAF, Operatore Fiscale ed esami di lingua con prenotazione appuntamenti didattici.">
+  <title>Calendario Corsi e Orari Consulenze | Velora Formazione</title>
+  
+  <link rel="stylesheet" href="style.css">
+  <script src="translations.js" defer></script>
+  <script src="app.js" defer></script>
+  <script src="animations.js" defer></script>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Sticky Top Navigation Header
+       ========================================================================== -->
+  <header class="navbar">
+    <div class="container flex-between">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/images/logo_velora.png" alt="Velora Formazione">
+        VELORA FORMAZIONE
+      </a>
+
+      <nav aria-label="Main navigation">
+        <ul id="nav-links-menu" class="nav-links">
+          <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+          <li><a href="chi_siamo.html" data-i18n="nav_about">Chi Siamo</a></li>
+          <li><a href="calendario.html" data-i18n="nav_calendar" style="color: #C89D42; font-weight: 700;">Calendario</a></li>
+          <li><a href="lavora_con_noi.html" data-i18n="nav_careers">Lavora con Noi</a></li>
+          <li><a href="contatti.html" data-i18n="nav_contacts">Contatti</a></li>
+          <li><a href="area_studente.html" data-i18n="nav_student_area">Area Studente</a></li>
+        </ul>
+      </nav>
+
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <button id="lang-toggle" class="lang-toggle-btn">🇬🇧 English</button>
+        <a href="accedi.html" class="btn btn-primary" style="padding: 8px 18px; font-size: 0.9rem;" data-i18n="nav_login">Accedi</a>
+        <button id="mobile-menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Calendar and Timetable Directory Hero Banner
+       ========================================================================== -->
+  <main>
+    <section class="section-padding" style="background: radial-gradient(circle at 50% 20%, #17325F 0%, #070D18 85%); border-bottom: 1px solid rgba(200, 157, 66, 0.25);">
+      <div class="container text-center" style="max-width: 900px;">
+        <span class="guidebook-badge">Calendario Didattico e Orari Sportelli Convenzionati</span>
+        <h1 style="font-size: clamp(2.4rem, 4.8vw, 3.6rem); margin: 14px 0 18px 0; color: #FFFFFF;">
+          Calendario dei Corsi e Orari di Ricevimento Sportelli
+        </h1>
+        <p style="color: #E3BA5E; font-size: 1.25rem; font-weight: 600; margin-bottom: 24px;">
+          Consulta le Date d'Avvio dei Prossimi Master Professionali e Prenota un Appuntamento di Orientamento Gratuito
+        </p>
+        <p style="color: #94A3B8; font-size: 1.1rem; max-width: 780px; margin: 0 auto 34px auto; line-height: 1.7;">
+          Pianifica il tuo percorso didattico verificando le date di inizio delle nostre classi a numero chiuso (massimo 20 studenti). Il nostro sportello di segreteria è attivo tutta la settimana con fasce di ricevimento mattutine e pomeridiane per colloqui individuali, pratiche di finanziamento in 4 rate e prenotazioni esami di lingua italiana A2 e B1.
+        </p>
+
+        <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+          <a href="#prenotazione-appuntamento-form" class="btn btn-primary" style="font-size: 1.05rem; padding: 14px 34px;">Prenota Fascia Oraria di Consulenza</a>
+          <a href="#tabella-orari" class="btn btn-secondary" style="font-size: 1.05rem; padding: 14px 34px;">Vedi Tabella Orari Sportelli</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Chronological Master Course and Certification Launch Timeline
+         ========================================================================== -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="text-center" style="max-width: 800px; margin: 0 auto 46px auto;">
+          <h2 style="font-size: 2.3rem; margin-bottom: 12px;">Prossime Date di Partenza Corsi Professionali</h2>
+          <p style="color: #94A3B8; font-size: 1.1rem;">
+            Ogni corso è erogato con doppia modalità: in presenza presso le aule convenzionate di Milano o in streaming video HD interattivo da tutta Italia.
+          </p>
+        </div>
+
+        <div class="grid-2" style="gap: 32px; margin-bottom: 60px;">
+          <!-- Timeline Card 1: Master CAF -->
+          <div class="service-card" style="padding: 34px; border-left: 5px solid #C89D42;">
+            <div class="flex-between" style="margin-bottom: 12px;">
+              <span style="font-size: 1.3rem; font-weight: 800; color: #C89D42;">27 GIUGNO 2025</span>
+              <span class="guidebook-badge">Numero Chiuso: Max 20 Posti</span>
+            </div>
+            <h3 style="font-size: 1.6rem; color: #FFFFFF; margin-bottom: 8px;">Master Operatore di CAF e Patronato</h3>
+            <p style="color: #94A3B8; font-size: 0.95rem; margin-bottom: 16px; line-height: 1.6;">
+              Percorso teorico e tirocinio pratico sui Modelli 730, ISEE, pensioni e welfare Naspi. Nessun titolo di studio preliminare richiesto all'ingresso.
+            </p>
+            <div class="flex-between" style="font-size: 0.9rem; color: #F8FAFC; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 14px;">
+              <span>📍 Aula Milano o Online</span>
+              <a href="master_caf.html" style="color: #C89D42; font-weight: 700;">Scheda Corso e 4 Rate →</a>
+            </div>
+          </div>
+
+          <!-- Timeline Card 2: Fiscal Operator -->
+          <div class="service-card" style="padding: 34px; border-left: 5px solid #25D366;">
+            <div class="flex-between" style="margin-bottom: 12px;">
+              <span style="font-size: 1.3rem; font-weight: 800; color: #25D366;">14 GIUGNO 2025</span>
+              <span class="guidebook-badge" style="background: rgba(37, 211, 102, 0.2); color: #25D366;">Intensivo 42 Ore</span>
+            </div>
+            <h3 style="font-size: 1.6rem; color: #FFFFFF; margin-bottom: 8px;">Operatore Fiscale 360 Gradi (4 + 2 Weekend)</h3>
+            <p style="color: #94A3B8; font-size: 0.95rem; margin-bottom: 16px; line-height: 1.6;">
+              Padroneggia Partita IVA, regime forfettario, fatturazione elettronica XML, SPID e PEC con simulazioni reali su estratti conto e piattaforme INPS.
+            </p>
+            <div class="flex-between" style="font-size: 0.9rem; color: #F8FAFC; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 14px;">
+              <span>📍 Aula Milano o Online</span>
+              <a href="operatore_fiscale.html" style="color: #25D366; font-weight: 700;">Dettaglio 42 Ore →</a>
+            </div>
+          </div>
+
+          <!-- Timeline Card 3: Language Testing -->
+          <div class="service-card" style="padding: 34px; border-left: 5px solid #2F80ED;">
+            <div class="flex-between" style="margin-bottom: 12px;">
+              <span style="font-size: 1.3rem; font-weight: 800; color: #2F80ED;">SESSIONI SETTIMANALI</span>
+              <span class="guidebook-badge" style="background: rgba(47, 128, 237, 0.2); color: #2F80ED;">Garanzia Seconda Chance</span>
+            </div>
+            <h3 style="font-size: 1.6rem; color: #FFFFFF; margin-bottom: 8px;">Esame di Lingua Italiana A2 e B1 Cittadinanza</h3>
+            <p style="color: #94A3B8; font-size: 0.95rem; margin-bottom: 16px; line-height: 1.6;">
+              Certificazioni ministeriali riconosciute dalla Questura e Prefettura. Se non superi l'esame al primo colpo, ti offriamo la ripetizione gratuita entro 6 mesi!
+            </p>
+            <div class="flex-between" style="font-size: 0.9rem; color: #F8FAFC; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 14px;">
+              <span>📍 Sede Accreditata Milano</span>
+              <a href="esame_italiano.html" style="color: #2F80ED; font-weight: 700;">Prenota con Zero Rischi →</a>
+            </div>
+          </div>
+
+          <!-- Timeline Card 4: Free Subsidized Training -->
+          <div class="service-card" style="padding: 34px; border-left: 5px solid #E3BA5E;">
+            <div class="flex-between" style="margin-bottom: 12px;">
+              <span style="font-size: 1.3rem; font-weight: 800; color: #E3BA5E;">INGRESSO CONTINUO</span>
+              <span class="guidebook-badge" style="background: rgba(200, 157, 66, 0.2); color: #E3BA5E;">100% Gratuito e Finanziato</span>
+            </div>
+            <h3 style="font-size: 1.6rem; color: #FFFFFF; margin-bottom: 8px;">Corsi Gratuiti per Disoccupati e Naspi</h3>
+            <p style="color: #94A3B8; font-size: 0.95rem; margin-bottom: 16px; line-height: 1.6;">
+              Riqualificazione professionale immediata per inoccupati e percettori di Reddito di Inclusione su contabilità, informatica cloud e sicurezza aziendale.
+            </p>
+            <div class="flex-between" style="font-size: 0.9rem; color: #F8FAFC; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 14px;">
+              <span>📍 Aule Territoriali o Streaming</span>
+              <a href="corsi_gratuiti.html" style="color: #E3BA5E; font-weight: 700;">Verifica Requisiti Gratis →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==========================================================================
+             Multi Office Consultation Timetable Directory Table
+             ========================================================================== -->
+        <div id="tabella-orari" class="service-card" style="padding: 44px; background: #0A1628; border-color: #C89D42;">
+          <h2 class="text-center" style="font-size: 2.2rem; margin-bottom: 12px; color: #FFFFFF;">🕒 Tabella Orari Sportelli e Consulenza Civica</h2>
+          <p class="text-center" style="color: #94A3B8; font-size: 1.05rem; margin-bottom: 30px;">
+            I nostri sportelli di ricevimento ti attendono dal Lunedì al Sabato con orari prolungati. Puoi presentarti di persona a Milano o concordare un appuntamento telefonico di orientamento.
+          </p>
+
+          <div style="overflow-x: auto;">
+            <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.98rem;">
+              <thead>
+                <tr style="border-bottom: 2px solid #C89D42; color: #C89D42; text-transform: uppercase; font-size: 0.85rem;">
+                  <th style="padding: 14px 18px;">Giornata</th>
+                  <th style="padding: 14px 18px;">Fascia Mattutina (09:00 - 13:00)</th>
+                  <th style="padding: 14px 18px;">Fascia Pomeridiana e Sera (14:30 - 19:30)</th>
+                  <th style="padding: 14px 18px;">Servizi di Sportello e Assistenza</th>
+                </tr>
+              </thead>
+              <tbody style="color: #F8FAFC; line-height: 1.8;">
+                <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
+                  <td style="padding: 16px 18px; font-weight: 700; color: #C89D42;">Lunedì - Giovedì</td>
+                  <td style="padding: 16px 18px;">09:00 - 13:00 (Sportello Pratiche e Iscrizioni)</td>
+                  <td style="padding: 16px 18px;">14:30 - 19:30 (Colloqui Orientamento e Progetto 4 Rate)</td>
+                  <td style="padding: 16px 18px; color: #94A3B8;">Assistenza CAF, verifica requisiti corsi gratuiti, supporto Area Studente.</td>
+                </tr>
+                <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
+                  <td style="padding: 16px 18px; font-weight: 700; color: #25D366;">Venerdì</td>
+                  <td style="padding: 16px 18px;">09:00 - 13:00 (Segreteria Esami Lingua e Partner B2B)</td>
+                  <td style="padding: 16px 18px;">14:30 - 19:00 (Consulenza Apri la Tua Sede Chiavi in Mano)</td>
+                  <td style="padding: 16px 18px; color: #94A3B8;">Accreditamento sedi convenzionate e colloqui con tutor madrelingua.</td>
+                </tr>
+                <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
+                  <td style="padding: 16px 18px; font-weight: 700; color: #2F80ED;">Sabato</td>
+                  <td style="padding: 16px 18px;">09:30 - 13:00 (Sessioni d'Esame B1/A2 e Master Teoria)</td>
+                  <td style="padding: 16px 18px;">14:00 - 17:00 (Lezioni in Presenza Aula Milano e Coworking)</td>
+                  <td style="padding: 16px 18px; color: #94A3B8;">Didattica weekend per professionisti occupati e test cittadinanza.</td>
+                </tr>
+                <tr>
+                  <td style="padding: 16px 18px; font-weight: 700; color: #E3BA5E;">Domenica</td>
+                  <td style="padding: 16px 18px; color: #25D366;">Su Appuntamento (09:30 - 13:00)</td>
+                  <td style="padding: 16px 18px; color: #25D366;">Laboratori Pratici in Aula e Streaming Video HD</td>
+                  <td style="padding: 16px 18px; color: #94A3B8;">Simulazioni cartelle reali per Operatore Fiscale e Master CAF.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Specialized Time Slot Reservation Questionnaire with Country of Origin
+         ========================================================================== -->
+    <section id="prenotazione-appuntamento-form" class="section-padding" style="background: #0B172B; border-top: 1px solid rgba(200, 157, 66, 0.25);">
+      <div class="container">
+        <div style="max-width: 760px; margin: 0 auto;">
+          <div class="text-center" style="margin-bottom: 36px;">
+            <h2 data-i18n="form_title" style="font-size: 2.3rem; margin-bottom: 12px;">Prenota un Appuntamento di Consulenza</h2>
+            <p data-i18n="form_subtitle" style="color: #94A3B8; font-size: 1.1rem;">
+              Compila il modulo selezionando la tua fascia oraria preferita! Ti ricontatteremo via telefono o WhatsApp allo +39 327 626 9708 per confermare il colloquio.
+            </p>
+          </div>
+
+          <div class="form-card" style="padding: 46px; border-color: #C89D42;">
+            <p style="color: #C89D42; font-size: 0.95rem; margin-bottom: 24px; font-weight: 600; text-align: center;">
+              📌 Specifica il tuo Paese di Origine se desideri supporto nella preparazione documenti con orientatori madrelingua!
+            </p>
+
+            <form class="candidate-form" aria-label="Time Slot Reservation Questionnaire">
+              <div class="grid-2" style="gap: 18px; margin-bottom: 0;">
+                <div class="form-group">
+                  <label for="sched-name" class="form-label" data-i18n="label_name">Nome</label>
+                  <input id="sched-name" type="text" class="form-input" placeholder="Es. Laura" required>
+                </div>
+                <div class="form-group">
+                  <label for="sched-surname" class="form-label" data-i18n="label_surname">Cognome</label>
+                  <input id="sched-surname" type="text" class="form-input" placeholder="Es. Bianchi" required>
+                </div>
+              </div>
+
+              <div class="grid-2" style="gap: 18px; margin-bottom: 0;">
+                <div class="form-group">
+                  <label for="sched-country" class="form-label" data-i18n="label_country">Paese di Origine</label>
+                  <input id="sched-country" type="text" class="form-input" placeholder="Es. Italia, Albania, Egitto, Perù..." required>
+                </div>
+                <div class="form-group">
+                  <label for="sched-phone" class="form-label" data-i18n="label_phone">Telefono e WhatsApp</label>
+                  <input id="sched-phone" type="tel" class="form-input" placeholder="+39 327 626 9708" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="sched-email" class="form-label" data-i18n="label_email">Posta Elettronica</label>
+                <input id="sched-email" type="email" class="form-input" placeholder="nome.cognome@email.it" required>
+              </div>
+
+              <div class="grid-2" style="gap: 18px; margin-bottom: 0;">
+                <div class="form-group">
+                  <label for="sched-day-select" class="form-label">Giorno della Settimana</label>
+                  <select id="sched-day-select" class="form-select" required>
+                    <option value="lunedi-giovedi">Lunedì - Giovedì (Orario Feriale)</option>
+                    <option value="venerdi">Venerdì (Speciale Partner B2B)</option>
+                    <option value="sabato">Sabato (Fascia Weekend)</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="sched-time-select" class="form-label">Fascia Oraria Preferita</label>
+                  <select id="sched-time-select" class="form-select" required>
+                    <option value="mattino">Mattina (09:30 - 12:30)</option>
+                    <option value="pomeriggio">Pomeriggio (14:30 - 17:30)</option>
+                    <option value="sera">Tardo Pomeriggio / Sera (17:30 - 19:30)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="sched-topic" class="form-label">Seleziona l'Oggetto del Colloquio</label>
+                <select id="sched-topic" class="form-select" required>
+                  <option value="">-- Scegli il motivo dell'appuntamento di segreteria --</option>
+                  <option value="master-caf">Informazioni e Iscrizione Master Operatore di CAF e Patronato</option>
+                  <option value="fiscale-360">Colloquio per Corso Operatore Fiscale 360 Gradi (42 Ore)</option>
+                  <option value="esame-lingua">Prenotazione Esame di Lingua Italiana A2 e B1 Cittadinanza</option>
+                  <option value="corsi-gratuiti">Verifica Requisiti per Corsi Gratuiti Disoccupati e Naspi</option>
+                  <option value="b2b-partner">Proposta Apri la Tua Sede Convenzionata come Partner</option>
+                  <option value="quattro-rate">Richiesta Preventivo e Progetto di Finanziamento in 4 Rate</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="sched-reason" class="form-label" data-i18n="label_reason">Scrivi eventuali note o richieste particolari</label>
+                <textarea id="sched-reason" class="form-textarea" placeholder="Specifica preferenze per appuntamento in sede fisica a Milano oppure video chiamata online..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1.1rem; padding: 16px; background: #C89D42; color: #070D18; font-weight: 800;" data-i18n="btn_submit">
+                Conferma Richiesta di Prenotazione Oraria
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Comprehensive Company Footer and Giant Stroke Wordmark Engine
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-columns">
+        <div class="footer-col">
+          <a href="index.html" class="brand-logo" style="margin-bottom: 18px;">
+            <img src="assets/images/logo_velora.png" alt="Velora Formazione"> VELORA FORMAZIONE
+          </a>
+          <p data-i18n="footer_desc" style="font-size: 0.95rem; margin-bottom: 16px;">
+            Ente di formazione professionale dedicato allo sviluppo di competenze civiche, fiscali e aziendali in tutta Italia.
+          </p>
+          <p class="gold-highlight" data-i18n="footer_trust" style="font-size: 0.95rem; border-left: 2px solid #C89D42; padding-left: 12px; line-height: 1.4;">
+            Grazie per la tua fiducia: Velora Formazione è lieta di accompagnarti nel tuo percorso di crescita professionale.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="col_courses">I Nostri Corsi</h4>
+          <ul>
+            <li><a href="master_caf.html" data-i18n="course_caf_title">Master Operatore CAF e Patronato</a></li>
+            <li><a href="operatore_fiscale.html" data-i18n="course_fiscale_title">Operatore Fiscale 360 Gradi</a></li>
+            <li><a href="esame_italiano.html" data-i18n="course_lang_title">Esame di Lingua Italiana A2 e B1</a></li>
+            <li><a href="corsi_gratuiti.html" data-i18n="course_free_title">Corsi Gratuiti per Disoccupati</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="col_info">Informazioni</h4>
+          <ul>
+            <li><a href="chi_siamo.html" data-i18n="nav_about">Chi Siamo</a></li>
+            <li><a href="lavora_con_noi.html" data-i18n="nav_careers">Lavora con Noi</a></li>
+            <li><a href="contatti.html" data-i18n="nav_contacts">Contatti</a></li>
+            <li><a href="trasparenza.html" data-i18n="link_transparency">Rendicontazione e Trasparenza</a></li>
+          </ul>
+          <div class="social-icons" aria-label="Social media profiles">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" title="Facebook">F</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" title="LinkedIn">in</a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" title="Instagram">I</a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" title="TikTok">T</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <!-- Giant Stroke Drawing Wordmark mounts within this dedicated container -->
+      <div id="footer-stroke-container" class="stroke-container" aria-hidden="true"></div>
+
+      <div class="text-center" style="padding-bottom: 40px; font-size: 0.85rem;">
+        <p data-i18n="copyright">© 2026 Velora Formazione. Tutti i diritti riservati.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
