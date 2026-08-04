@@ -357,7 +357,22 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
-    /* 5. Inject Site-Wide Floating WhatsApp & Direct Phone Call Action Buttons */
+    /* 5. Inject Site-Wide Browser Tab Favicon Icon */
+    if (!document.querySelector("link[rel*='icon']")) {
+      const iconLink = document.createElement("link");
+      iconLink.rel = "icon";
+      iconLink.type = "image/png";
+      iconLink.href = "favicon.png";
+      document.head.appendChild(iconLink);
+    }
+    if (!document.querySelector("link[rel='apple-touch-icon']")) {
+      const appleIcon = document.createElement("link");
+      appleIcon.rel = "apple-touch-icon";
+      appleIcon.href = "favicon.png";
+      document.head.appendChild(appleIcon);
+    }
+
+    /* 6. Inject Site-Wide Floating WhatsApp & Direct Phone Call Action Buttons */
     if (!document.getElementById("velora-floating-action-bar")) {
       const floatBar = document.createElement("div");
       floatBar.id = "velora-floating-action-bar";
