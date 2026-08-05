@@ -280,7 +280,7 @@ img {
   align-items: center;
   justify-content: center;
   gap: 6px;
-  min-width: 60px;
+  width: 90px;
   transition: all 0.2s ease;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
