@@ -1554,6 +1554,56 @@ header.navbar, header.header, .header-old, #old-header {
 }
 
 /* ==========================================================================
+   Sleek Micro Status Pills (Live / Coming Soon)
+   ========================================================================== */
+.status-pill {
+  font-size: 0.68rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.6px !important;
+  text-transform: uppercase !important;
+  padding: 3px 9px !important;
+  border-radius: 20px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 5px !important;
+  line-height: 1 !important;
+  backdrop-filter: blur(6px) !important;
+  white-space: nowrap !important;
+}
+
+.status-pill--live {
+  background: rgba(37, 211, 102, 0.12) !important;
+  color: #25D366 !important;
+  border: 1px solid rgba(37, 211, 102, 0.35) !important;
+  box-shadow: 0 0 10px rgba(37, 211, 102, 0.15) !important;
+}
+
+.status-pill--live::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #25D366;
+  box-shadow: 0 0 6px #25D366;
+}
+
+.status-pill--soon {
+  background: rgba(200, 157, 66, 0.12) !important;
+  color: #E3BA5E !important;
+  border: 1px solid rgba(200, 157, 66, 0.35) !important;
+  box-shadow: 0 0 10px rgba(200, 157, 66, 0.15) !important;
+}
+
+.status-pill--soon::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #E3BA5E;
+  box-shadow: 0 0 6px #E3BA5E;
+}
+
+/* ==========================================================================
    Site-Wide Floating WhatsApp & Phone Call Action Buttons
    ========================================================================== */
 .floating-action-bar {

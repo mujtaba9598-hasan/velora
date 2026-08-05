@@ -213,15 +213,15 @@ function initializeStrokeTextEngine() {
   strokeText.setAttribute("y", "65%");
   strokeText.setAttribute("text-anchor", "middle");
   strokeText.setAttribute("font-family", "'Syncopate', 'Orbitron', sans-serif");
-  strokeText.setAttribute("font-size", "92");
+  strokeText.setAttribute("font-size", "110");
   strokeText.setAttribute("font-weight", "700");
-  strokeText.setAttribute("letter-spacing", "4");
+  strokeText.setAttribute("letter-spacing", "10");
   strokeText.setAttribute("fill", "transparent");
   strokeText.setAttribute("stroke", "#C89D42");
   strokeText.setAttribute("stroke-width", "1.6");
   strokeText.style.strokeDasharray = "800";
   strokeText.setAttribute("class", "stroke-layer");
-  strokeText.textContent = "VELORA FORMAZIONE";
+  strokeText.textContent = "VELORA";
   svg.appendChild(strokeText);
 
   /* Color wipe fill text layer */
@@ -230,12 +230,12 @@ function initializeStrokeTextEngine() {
   fillText.setAttribute("y", "65%");
   fillText.setAttribute("text-anchor", "middle");
   fillText.setAttribute("font-family", "'Syncopate', 'Orbitron', sans-serif");
-  fillText.setAttribute("font-size", "92");
+  fillText.setAttribute("font-size", "110");
   fillText.setAttribute("font-weight", "700");
-  fillText.setAttribute("letter-spacing", "4");
+  fillText.setAttribute("letter-spacing", "10");
   fillText.setAttribute("fill", "url(#wipe-gradient-loop)");
   fillText.setAttribute("class", "fill-layer");
-  fillText.textContent = "VELORA FORMAZIONE";
+  fillText.textContent = "VELORA";
   svg.appendChild(fillText);
 
   container.appendChild(svg);
