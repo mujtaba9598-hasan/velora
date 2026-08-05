@@ -12,120 +12,105 @@
 </head>
 <body class="theme-navy">
 
-  <!-- Navigation -->
+  <!-- ==========================================================================
+       Sticky Top Navigation Header
+       ========================================================================== -->
   <header class="navbar">
-    <div class="container">
+    <div class="container flex-between">
       <a href="index.html" class="brand-logo">
         <img src="assets/images/logo_velora.png" alt="Velora Formazione">
-        VELORA
+        VELORA FORMAZIONE
       </a>
 
-      <ul class="nav-links" aria-label="Menu Principale">
-        <li><a href="index.html" class="direct-link" data-i18n="nav_home">Home</a></li>
-        
-        <!-- CardNav Item 1: Corsi & Master -->
-        <li class="cardnav-item">
-          <button class="cardnav-trigger">Corsi &amp; Master <span>▼</span></button>
-          <div class="cardnav-dropdown">
-            <a href="master_caf.html" data-i18n="course_caf_title">Master CAF e Patronato <span>→</span></a>
-            <a href="operatore_fiscale.html" data-i18n="course_fiscale_title">Operatore Fiscale 360° <span>→</span></a>
-            <a href="esame_italiano.html" data-i18n="course_lang_title">Esami di Lingua Italiana <span>→</span></a>
-            <a href="corsi_gratuiti.html" data-i18n="course_free_title">Corsi Gratuiti per Disoccupati <span>→</span></a>
-          </div>
-        </li>
+      <nav aria-label="Main navigation">
+        <ul id="nav-links-menu" class="nav-links">
+          <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+          <li><a href="chi_siamo.html" data-i18n="nav_about">Chi Siamo</a></li>
+          <li><a href="calendario.html" data-i18n="nav_calendar">Calendario</a></li>
+          <li><a href="lavora_con_noi.html" data-i18n="nav_careers">Lavora con Noi</a></li>
+          <li><a href="contatti.html" data-i18n="nav_contacts">Contatti</a></li>
+          <li><a href="area_studente.html" data-i18n="nav_student_area">Area Studente</a></li>
+        </ul>
+      </nav>
 
-        <!-- CardNav Item 2: L'Accademia -->
-        <li class="cardnav-item">
-          <button class="cardnav-trigger">L'Accademia <span>▼</span></button>
-          <div class="cardnav-dropdown">
-            <a href="chi_siamo.html" data-i18n="nav_about">Chi Siamo <span>→</span></a>
-            <a href="lavora_con_noi.html" data-i18n="nav_careers">Lavora con Noi / Affiliati <span>→</span></a>
-            <a href="calendario.html">Calendario Didattico <span>→</span></a>
-            <a href="manuali.html">Manuali &amp; Libri di Testo <span>→</span></a>
-            <a href="trasparenza.html" data-i18n="link_transparency">Trasparenza Civica <span>→</span></a>
-          </div>
-        </li>
-
-        <li><a href="contatti.html" class="direct-link" data-i18n="nav_contacts">Contatti</a></li>
-        <li><a href="area_studente.html" class="direct-link" style="color: #C89D42; font-weight: 700;" data-i18n="nav_student_area">Area Studente</a></li>
-        <li>
-          <button id="lang-toggle" class="lang-toggle-btn" title="Toggle Bilingual Language Mode" aria-label="Toggle Language">🇮🇹 IT</button>
-        </li>
-        <li>
-          <a href="accedi.html" class="btn btn-primary" data-i18n="nav_login" style="padding: 8px 22px; font-size: 0.9rem;">Accedi</a>
-        </li>
-      </ul>
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <button id="lang-toggle" class="lang-toggle-btn">🇬🇧 English</button>
+        <a href="accedi.html" class="btn btn-primary" style="padding: 8px 18px; font-size: 0.9rem;" data-i18n="nav_login">Accedi</a>
+        <button id="mobile-menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+      </div>
     </div>
   </header>
 
   <!-- Main Content -->
   <main style="padding: 60px 0;">
     <div class="container" style="max-width: 960px;">
-      <span class="guidebook-badge" style="background: rgba(200, 157, 66, 0.2); color: #C89D42;">Regolamento (UE) 2016/679 (GDPR)</span>
-      <h1 data-i18n="link_privacy" style="font-size: 2.6rem; margin: 16px 0 24px 0; color: #F8FAFC;">Informativa sul Trattamento dei Dati Personali e Cookie Policy</h1>
+      <span class="guidebook-badge" style="background: rgba(200, 157, 66, 0.2); color: #C89D42;" data-i18n="privacy_hero_badge">Regolamento (UE) 2016/679 (GDPR)</span>
+      <h1 data-i18n="privacy_hero_title" style="font-size: 2.6rem; margin: 16px 0 24px 0; color: #F8FAFC;">Informativa sul Trattamento dei Dati Personali e Cookie Policy</h1>
       
       <div class="service-card" style="padding: 36px; margin-bottom: 30px; border-color: rgba(200, 157, 66, 0.4);">
-        <h3 style="color: #E3BA5E; margin-bottom: 14px;">1. Titolare del Trattamento dei Dati</h3>
+        <h3 data-i18n="privacy_p1_title" style="color: #E3BA5E; margin-bottom: 14px;">1. Titolare del Trattamento dei Dati</h3>
         <p style="color: #F8FAFC; line-height: 1.7; margin-bottom: 12px;">
           <strong>Velora Formazione / Velora Group Academy</strong><br>
-          Sede Operativa: Milano, Italia<br>
-          Email Titolare e DPO: <a href="mailto:privacy@veloragroupacademy.com" style="color: #C89D42;">privacy@veloragroupacademy.com</a> / <a href="mailto:info@veloragroupacademy.com" style="color: #C89D42;">info@veloragroupacademy.com</a>
+          <span data-i18n="privacy_p1_addr">Sede Operativa: Milano, Italia</span><br>
+          <span data-i18n="privacy_p1_email">Email Titolare e DPO:</span> <a href="mailto:privacy@veloragroupacademy.com" style="color: #C89D42;">privacy@veloragroupacademy.com</a> / <a href="mailto:info@veloragroupacademy.com" style="color: #C89D42;">info@veloragroupacademy.com</a>
         </p>
-        <p style="color: #94A3B8; font-size: 0.95rem; line-height: 1.6;">
+        <p data-i18n="privacy_p1_desc" style="color: #94A3B8; font-size: 0.95rem; line-height: 1.6;">
           Il trattamento si svolge nel pieno rispetto del Regolamento Generale sulla Protezione dei Dati (UE) 2016/679 ("GDPR"), della Direttiva 2002/58/CE ("ePrivacy") e del Codice della Privacy (D.Lgs. 196/2003 e successive modifiche introdotte dal D.Lgs. 101/2018).
         </p>
       </div>
 
       <div class="service-card" style="padding: 36px; margin-bottom: 30px;">
-        <h3 style="color: #F8FAFC; margin-bottom: 14px;">2. Finalità e Base Giuridica del Trattamento</h3>
+        <h3 data-i18n="privacy_p2_title" style="color: #F8FAFC; margin-bottom: 14px;">2. Finalità e Base Giuridica del Trattamento</h3>
         <ul style="color: #94A3B8; padding-left: 20px; line-height: 1.8; font-size: 1rem;">
-          <li><strong>Erogazione di Servizi Formativi e Registrazione Accademica:</strong> Trattamento necessario per l'esecuzione di un contratto di iscrizione a master e corsi di formazione o di misure precontrattuali (Art. 6, par. 1, lett. b GDPR).</li>
-          <li><strong>Adempimenti Fiscali, Amministrativi e Contabili:</strong> Obbligo legale al quale è soggetto il titolare del trattamento (Art. 6, par. 1, lett. c GDPR).</li>
-          <li><strong>Sicurezza delle Architetture Informatiche e Prevenzione Abusi:</strong> Legittimo interesse del titolare a proteggere le piattaforme didattiche telematiche e prevenire attacchi informatici (Art. 6, par. 1, lett. f GDPR).</li>
-          <li><strong>Comunicazioni Informative e Orientamento:</strong> Solo previo esplicito, libero e inequivocabile consenso dell'utente (Art. 6, par. 1, lett. a GDPR), revocabile in qualsiasi momento.</li>
+          <li data-i18n="privacy_p2_li1"><strong>Erogazione di Servizi Formativi e Registrazione Accademica:</strong> Trattamento necessario per l'esecuzione di un contratto di iscrizione a master e corsi di formazione o di misure precontrattuali (Art. 6, par. 1, lett. b GDPR).</li>
+          <li data-i18n="privacy_p2_li2"><strong>Adempimenti Fiscali, Amministrativi e Contabili:</strong> Obbligo legale al quale è soggetto il titolare del trattamento (Art. 6, par. 1, lett. c GDPR).</li>
+          <li data-i18n="privacy_p2_li3"><strong>Sicurezza delle Architetture Informatiche e Prevenzione Abusi:</strong> Legittimo interesse del titolare a proteggere le piattaforme didattiche telematiche e prevenire attacchi informatici (Art. 6, par. 1, lett. f GDPR).</li>
+          <li data-i18n="privacy_p2_li4"><strong>Comunicazioni Informative e Orientamento:</strong> Solo previo esplicito, libero e inequivocabile consenso dell'utente (Art. 6, par. 1, lett. a GDPR), revocabile in qualsiasi momento.</li>
         </ul>
       </div>
 
       <div class="service-card" style="padding: 36px; margin-bottom: 30px;">
-        <h3 style="color: #F8FAFC; margin-bottom: 14px;">3. Cookie Policy e Strumenti di Tracciamento (Direttiva ePrivacy)</h3>
-        <p style="color: #94A3B8; line-height: 1.7; margin-bottom: 16px;">
+        <h3 data-i18n="privacy_p3_title" style="color: #F8FAFC; margin-bottom: 14px;">3. Cookie Policy e Strumenti di Tracciamento (Direttiva ePrivacy)</h3>
+        <p data-i18n="privacy_p3_desc" style="color: #94A3B8; line-height: 1.7; margin-bottom: 16px;">
           I cookie sono piccoli aggregati di testo memorizzati nel terminale dell'utente dal nostro server per consentire una fruizione sicura e ottimizzata del sito web. In osservanza alle linee guida dell'European Data Protection Board (EDPB) e del Garante per la Protezione dei Dati Personali:
         </p>
         <div style="background: #0B1628; border-left: 4px solid #25D366; padding: 16px; border-radius: 8px; margin-bottom: 16px;">
-          <h5 style="color: #FFFFFF; font-size: 1.05rem; margin-bottom: 6px;">Cookie Tecnici ed Essenziali (Senza Richiesta Consenso)</h5>
-          <p style="color: #94A3B8; font-size: 0.9rem; margin-bottom: 0;">
+          <h5 data-i18n="privacy_p3_sub1_title" style="color: #FFFFFF; font-size: 1.05rem; margin-bottom: 6px;">Cookie Tecnici ed Essenziali (Senza Richiesta Consenso)</h5>
+          <p data-i18n="privacy_p3_sub1_desc" style="color: #94A3B8; font-size: 0.9rem; margin-bottom: 0;">
             Strettamente indispensabili per l'autenticazione nell'Area Studente, il salvataggio della scelta linguistica (italiano/inglese) e il mantenimento di sessione sicura su protocollo HTTPS. Per tali cookie non è richiesto il consenso preventivo ai sensi dell'Art. 122 del D.Lgs. 196/2003.
           </p>
         </div>
         <div style="background: #0B1628; border-left: 4px solid #C89D42; padding: 16px; border-radius: 8px;">
-          <h5 style="color: #FFFFFF; font-size: 1.05rem; margin-bottom: 6px;">Cookie di Analisi Statistica e Preferenze (Con Consenso Attivo)</h5>
-          <p style="color: #94A3B8; font-size: 0.9rem; margin-bottom: 0;">
+          <h5 data-i18n="privacy_p3_sub2_title" style="color: #FFFFFF; font-size: 1.05rem; margin-bottom: 6px;">Cookie di Analisi Statistica e Preferenze (Con Consenso Attivo)</h5>
+          <p data-i18n="privacy_p3_sub2_desc" style="color: #94A3B8; font-size: 0.9rem; margin-bottom: 0;">
             Impiegati per raccogliere statistiche aggregate e anonime sull'utilizzo del portale e ottimizzare la navigazione. Sono abilitati solo previo click dell'utente sul tasto "Accetta Tutti" del banner GDPR visualizzato all'avvio. L'utente ha facoltà di rifiutarli o di reimpostare le preferenze in ogni istante cancellando i dati dal browser.
           </p>
         </div>
       </div>
 
       <div class="service-card" style="padding: 36px;">
-        <h3 style="color: #F8FAFC; margin-bottom: 14px;">4. Diritti degli Interessati (Articoli 15-22 del GDPR)</h3>
-        <p style="color: #94A3B8; line-height: 1.7; margin-bottom: 16px;">
+        <h3 data-i18n="privacy_p4_title" style="color: #F8FAFC; margin-bottom: 14px;">4. Diritti degli Interessati (Articoli 15-22 del GDPR)</h3>
+        <p data-i18n="privacy_p4_desc" style="color: #94A3B8; line-height: 1.7; margin-bottom: 16px;">
           In ogni momento, in qualità di interessato, l'utente può far valere nei confronti di Velora Formazione i seguenti diritti inviolabili:
         </p>
         <ul style="color: #F8FAFC; padding-left: 20px; line-height: 1.8; margin-bottom: 20px; font-size: 0.95rem;">
-          <li><strong>Diritto di Accesso (Art. 15 GDPR):</strong> Ottenere conferma dell'esistenza del trattamento e ricevere una copia chiara dei dati conservati.</li>
-          <li><strong>Diritto di Rettifica (Art. 16 GDPR):</strong> Richiedere l'aggiornamento, la correzione o l'integrazione di dati incompleti o inesatti.</li>
-          <li><strong>Diritto alla Cancellazione / "Diritto all'Oblio" (Art. 17 GDPR):</strong> Ottenere l'immediata eliminazione dei propri dati nei casi ammessi dal regolamento europeo.</li>
-          <li><strong>Diritto alla Limitazione del Trattamento (Art. 18 GDPR) e Portabilità (Art. 20 GDPR):</strong> Ricevere in formato strutturato di uso comune i dati forniti e chiederne la trasmissione ad altro titolare.</li>
-          <li><strong>Diritto di Opposizione e Revoca del Consenso (Art. 21 GDPR):</strong> Opporsi al trattamento per fini promozionali e revocare il consenso con la medesima facilità con cui è stato concesso.</li>
+          <li data-i18n="privacy_p4_li1"><strong>Diritto di Accesso (Art. 15 GDPR):</strong> Ottenere conferma dell'esistenza del trattamento e ricevere una copia chiara dei dati conservati.</li>
+          <li data-i18n="privacy_p4_li2"><strong>Diritto di Rettifica (Art. 16 GDPR):</strong> Richiedere l'aggiornamento, la correzione o l'integrazione di dati incompleti o inesatti.</li>
+          <li data-i18n="privacy_p4_li3"><strong>Diritto alla Cancellazione / "Diritto all'Oblio" (Art. 17 GDPR):</strong> Ottenere l'immediata eliminazione dei propri dati nei casi ammessi dal regolamento europeo.</li>
+          <li data-i18n="privacy_p4_li4"><strong>Diritto alla Limitazione del Trattamento (Art. 18 GDPR) e Portabilità (Art. 20 GDPR):</strong> Ricevere in formato strutturato di uso comune i dati forniti e chiederne la trasmissione ad altro titolare.</li>
+          <li data-i18n="privacy_p4_li5"><strong>Diritto di Opposizione e Revoca del Consenso (Art. 21 GDPR):</strong> Opporsi al trattamento per fini promozionali e revocare il consenso con la medesima facilità con cui è stato concesso.</li>
         </ul>
         <div class="text-center" style="margin-top: 28px;">
-          <a href="contatti.html" class="btn btn-primary" style="padding: 10px 24px;">Contatta il Responsabile Privacy (DPO)</a>
+          <a href="contatti.html" class="btn btn-primary" style="padding: 10px 24px;" data-i18n="privacy_dpo_btn">Contatta il Responsabile Privacy (DPO)</a>
         </div>
       </div>
 
     </div>
   </main>
 
-  <!-- Footer -->
+  <!-- ==========================================================================
+       Comprehensive Company Footer and Giant Stroke Wordmark Engine
+       ========================================================================== -->
   <footer class="footer">
     <div class="container">
       <div class="footer-columns">
@@ -136,7 +121,11 @@
           <p data-i18n="footer_desc" style="font-size: 0.95rem; margin-bottom: 16px;">
             Ente di formazione professionale dedicato allo sviluppo di competenze civiche, fiscali e aziendali in tutta Italia.
           </p>
+          <p class="gold-highlight" data-i18n="footer_trust" style="font-size: 0.95rem; border-left: 2px solid #C89D42; padding-left: 12px; line-height: 1.4;">
+            Grazie per la tua fiducia: Velora Formazione è lieta di accompagnarti nel tuo percorso di crescita professionale.
+          </p>
         </div>
+
         <div class="footer-col">
           <h4 data-i18n="col_courses">I Nostri Corsi</h4>
           <ul>
@@ -150,10 +139,10 @@
           <h4 data-i18n="col_info">Informazioni</h4>
           <ul>
             <li><a href="chi_siamo.html" data-i18n="nav_about">Chi Siamo</a></li>
+            <li><a href="calendario.html" data-i18n="nav_calendar">Calendario</a></li>
             <li><a href="lavora_con_noi.html" data-i18n="nav_careers">Lavora con Noi</a></li>
-            <li><a href="contatti.html" data-i18n="nav_contacts">Contatti</a></li>
             <li><a href="trasparenza.html" data-i18n="link_transparency">Rendicontazione e Trasparenza</a></li>
-            <li><a href="privacy_cookie_policy.html" style="color: #C89D42; font-weight: 600;">Privacy &amp; Cookie Policy (GDPR EU)</a></li>
+            <li><a href="privacy_cookie_policy.html" style="color: #C89D42; font-weight: 600;" data-i18n="link_privacy">Privacy &amp; Cookie Policy (GDPR EU)</a></li>
           </ul>
           <!-- Authentic SVG Social Icons -->
           <div class="social-icons" aria-label="Social media profiles" style="display: flex; gap: 12px; margin-top: 14px;">
@@ -175,6 +164,7 @@
 
       <div class="footer-divider"></div>
 
+      <!-- Giant Stroke Drawing Wordmark mounts within this dedicated container -->
       <div id="footer-stroke-container" class="stroke-container" aria-hidden="true"></div>
 
       <div class="text-center" style="padding-bottom: 40px; font-size: 0.85rem;">

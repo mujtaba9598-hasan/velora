@@ -53,14 +53,14 @@
             🔒
           </div>
           
-          <h1 data-i18n="nav_login" style="font-size: 2.2rem; margin-bottom: 8px;">Accesso Riservato</h1>
-          <p style="color: #94A3B8; font-size: 0.95rem; margin-bottom: 32px;">
+          <h1 data-i18n="login_title" style="font-size: 2.2rem; margin-bottom: 8px;">Accesso Riservato</h1>
+          <p data-i18n="login_desc" style="color: #94A3B8; font-size: 0.95rem; margin-bottom: 32px;">
             Inserisci le credenziali del tuo account allievo o partner aziendale per entrare nell'area didattica riservata.
           </p>
 
           <form id="login-form-verification" style="text-align: left;">
             <div class="form-group">
-              <label for="username-input" class="form-label">Posta Elettronica o Codice Allievo</label>
+              <label for="username-input" class="form-label" data-i18n="login_user_label">Posta Elettronica o Codice Allievo</label>
               <input 
                 id="username-input" 
                 type="email" 
@@ -72,8 +72,8 @@
 
             <div class="form-group">
               <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-                <label for="password-input" class="form-label" style="margin-bottom: 0;">Password di Accesso</label>
-                <a href="contatti.html" style="color: #C89D42; font-size: 0.85rem; text-decoration: underline;">Credenziali Dimenticate?</a>
+                <label for="password-input" class="form-label" style="margin-bottom: 0;" data-i18n="login_pwd_label">Password di Accesso</label>
+                <a href="contatti.html" style="color: #C89D42; font-size: 0.85rem; text-decoration: underline;" data-i18n="login_pwd_forgot">Credenziali Dimenticate?</a>
               </div>
               <input 
                 id="password-input" 
@@ -86,10 +86,10 @@
 
             <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 28px;">
               <input id="remember-me" type="checkbox" style="width: 18px; height: 18px; accent-color: #C89D42;">
-              <label for="remember-me" style="font-size: 0.9rem; color: #F8FAFC;">Resta collegato sul dispositivo</label>
+              <label for="remember-me" style="font-size: 0.9rem; color: #F8FAFC;" data-i18n="login_remember">Resta collegato sul dispositivo</label>
             </div>
 
-            <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1.05rem; padding: 14px;">
+            <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1.05rem; padding: 14px;" data-i18n="login_btn">
               Entra nell'Area Studente
             </button>
           </form>
@@ -98,15 +98,15 @@
                Technical Assistance and Credential Recovery Guidance
                ========================================================================== -->
           <div style="margin-top: 36px; padding-top: 24px; border-top: 1px solid rgba(255, 255, 255, 0.15);">
-            <p style="font-size: 0.9rem; color: #94A3B8; margin-bottom: 12px;">
+            <p data-i18n="login_not_registered" style="font-size: 0.9rem; color: #94A3B8; margin-bottom: 12px;">
               Non sei ancora registrato ai nostri corsi professionalizzanti o master?
             </p>
-            <a href="calendario.html" class="btn btn-secondary" style="width: 100%; font-size: 0.9rem;">
+            <a href="calendario.html" class="btn btn-secondary" data-i18n="login_register_btn" style="width: 100%; font-size: 0.9rem;">
               Richiedi Candidatura e Colloquio Telefonico
             </a>
             
             <div style="margin-top: 20px; font-size: 0.85rem; color: #94A3B8;">
-              Hai bisogno di assistenza tecnica immediata? 
+              <span data-i18n="login_assist">Hai bisogno di assistenza tecnica immediata?</span> 
               <br>
               <a href="mailto:info@veloragroupacademy.com" style="color: #C89D42; font-weight: 600;">info@veloragroupacademy.com</a> | Tel: <a href="tel:+393276269708" style="color: #F8FAFC;">+39 327 626 9708</a>
             </div>

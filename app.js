@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll("[data-i18n]").forEach(function (element) {
       const key = element.getAttribute("data-i18n");
       if (dict[key]) {
-        element.textContent = dict[key];
+        element.innerHTML = dict[key];
       }
     });
 
