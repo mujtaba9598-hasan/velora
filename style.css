@@ -1861,3 +1861,24 @@ header.navbar, header.header, .header-old, #old-header {
 
 
 
+
+/* Global Navbar Buttons Layout Fix */
+.navbar .lang-toggle-btn {
+  width: 86px !important;
+  min-width: 86px !important;
+  max-width: 86px !important;
+  padding: 4px 4px !important;
+  font-size: 0.75rem !important;
+  gap: 4px !important;
+}
+.navbar .btn-primary {
+  width: 100px !important;
+  min-width: 100px !important;
+  max-width: 100px !important;
+  padding: 6px 10px !important;
+  font-size: 0.85rem !important;
+  text-align: center !important;
+  justify-content: center !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+}
