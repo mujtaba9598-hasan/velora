@@ -25,11 +25,13 @@ const VELORA_TRANSLATIONS = {
     btn_discover: "Scopri i Master",
     btn_student: "Entra nel Portale",
 
-    /* Promotional Guidebook Callout */
+    /* Promotional Guidebook Callout / Enrollment */
     guide_badge: "Manuale Ufficiale",
     guide_title: "Conosci i tuoi diritti e diventa un esperto qualificato",
     guide_text: "Acquista il manuale operativo completo per operatori fiscali e patrocinatori welfare con casi pratici ed esercizi reali.",
     btn_buy_book: "Acquista su Amazon",
+    btn_enroll_caf: "ISCRIZIONE DEL CORSO CAF E PATRONATO FISCALE",
+    btn_enroll_lang: "ISCRIZIONE PER CERTIFICATO DI LINGUA ITALIANO A2/B1",
 
     /* Service Trio and Expanded Course Catalog */
     catalog_title: "I Nostri Percorsi di Formazione e Servizi Civici",
@@ -787,11 +789,13 @@ const VELORA_TRANSLATIONS = {
     btn_discover: "Explore Masters",
     btn_student: "Enter Learning Portal",
 
-    /* Promotional Guidebook Callout */
+    /* Promotional Guidebook Callout / Enrollment */
     guide_badge: "Official Handbook",
     guide_title: "Master your legal rights and become a certified operator",
     guide_text: "Acquire the definitive operational guidebook for tax assistance and welfare consultants featuring practical simulations and real case exercises.",
     btn_buy_book: "Purchase on Amazon",
+    btn_enroll_caf: "ENROLLMENT FOR CAF AND TAX PATRONAGE COURSE",
+    btn_enroll_lang: "ENROLLMENT FOR A2/B1 ITALIAN LANGUAGE CERTIFICATE",
 
     /* Service Trio and Expanded Course Catalog */
     catalog_title: "Our Training Pathways and Civic Services",
