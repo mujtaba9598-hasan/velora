@@ -661,8 +661,8 @@ const VELORA_TRANSLATIONS = {
     form_contact_route_5: "Supporto Tecnico per Portale Area Studente",
     form_contact_msg_label: "Scrivi il tuo messaggio o la tua domanda",
     form_contact_btn: "Invia Richiesta di Contatto ed Entra in Rete",
-    contact_map_title: "Sede Operativa e Aule d'Esame",
-    contact_map_desc: "Milano, Italia | Facilmente raggiungibile con la metropolitana",
+    contact_map_title: "Sede Principale e Sede Secondaria",
+    contact_map_desc: "Osio Sotto (BG) e Milano (MI) | Facilmente raggiungibili",
     contact_trust_quote: "\"Thank you for your trust: Velora Formazione is honored to guide and accompany your professional career growth.\"",
     contact_trust_desc: "Siamo a vostra completa disposizione per offrirvi un'assistenza didattica e di orientamento senza eguali in Italia.",
 
@@ -1425,8 +1425,8 @@ const VELORA_TRANSLATIONS = {
     form_contact_route_5: "Technical Support for Student Area Portal",
     form_contact_msg_label: "Write your message or question",
     form_contact_btn: "Submit Contact Request and Join the Network",
-    contact_map_title: "Operational Headquarters and Exam Rooms",
-    contact_map_desc: "Milan, Italy | Easily accessible by subway",
+    contact_map_title: "Main Office and Secondary Office",
+    contact_map_desc: "Osio Sotto (BG) and Milan (MI) | Easily accessible",
     contact_trust_quote: "\"Thank you for your trust: Velora Formazione is honored to guide and accompany your professional career growth.\"",
     contact_trust_desc: "We are at your complete disposal to offer you unparalleled educational and orientation assistance in Italy.",
 
