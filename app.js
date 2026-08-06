@@ -404,4 +404,36 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   enforceGlobalConsistency(currentLanguage);
+
+  /* Video Modal Logic */
+  const videoTriggers = document.querySelectorAll('.video-modal-trigger');
+  const videoModal = document.getElementById('video-modal-overlay');
+  const videoIframe = document.getElementById('video-iframe');
+  const closeVideoBtn = document.getElementById('close-video-modal');
+
+  if (videoModal && videoIframe && closeVideoBtn) {
+    videoTriggers.forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const url = this.getAttribute('data-video-url');
+        if (url) {
+          videoIframe.src = url;
+          videoModal.classList.add('active');
+        }
+      });
+    });
+
+    const closeModal = () => {
+      videoModal.classList.remove('active');
+      setTimeout(() => { videoIframe.src = ""; }, 300);
+    };
+
+    closeVideoBtn.addEventListener('click', closeModal);
+    videoModal.addEventListener('click', function(e) {
+      if (e.target === videoModal) {
+        closeModal();
+      }
+    });
+  }
+
 });

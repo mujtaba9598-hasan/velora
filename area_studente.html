@@ -149,7 +149,7 @@
             </div>
             <div style="flex: 1; text-align: center;"><span class="guidebook-badge" style="background: rgba(200, 157, 66, 0.2); color: #C89D42;">Google Drive Video</span></div>
             <div style="flex: 1; text-align: right;">
-              <a href="#" target="_blank" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;">Guarda Video</a>
+              <button class="btn btn-secondary video-modal-trigger" data-video-url="https://drive.google.com/file/d/1B7jB3h7E7qA9yU4v6c8d7e6f5g4h3i2j/preview" style="padding: 8px 16px; font-size: 0.85rem;">Guarda Video</button>
             </div>
           </div>
         </div>
@@ -264,6 +264,18 @@
       </div>
     </div>
   </footer>
+
+  <!-- ==========================================================================
+       Video Modal Overlay
+       ========================================================================== -->
+  <div id="video-modal-overlay" class="modal-overlay" aria-hidden="true">
+    <div class="modal-content">
+      <button id="close-video-modal" class="modal-close-btn">&times;</button>
+      <div class="video-responsive-container">
+        <iframe id="video-iframe" src="" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>
