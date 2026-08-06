@@ -186,9 +186,9 @@
           <span class="guidebook-badge" data-i18n="tools_badge">Materiali e Didattica Interattiva</span>
           <h2 data-i18n="tools_title" style="font-size: 2rem; margin-top: 10px;">Strumenti Operativi e Laboratori Digitali</h2>
         </div>
-        <div class="grid-3" style="gap: 28px;">
+        <div class="simple-slider" id="tools-slider" style="position: relative; max-width: 500px; margin: 0 auto; min-height: 380px;">
           <!-- BorderGlow Card 1 -->
-          <div class="border-glow-card" style="--card-bg: #0B1628;">
+          <div class="border-glow-card slide-card" style="--card-bg: #0B1628; position: absolute; top: 0; left: 0; width: 100%; opacity: 1; transition: opacity 0.8s ease-in-out; z-index: 2;">
             <span class="edge-light"></span>
             <div class="border-glow-inner" style="text-align: center;">
               <img src="assets/images/home_resource_1.png" alt="Piattaforme INPS" style="width: 100%; height: 210px; object-fit: cover; border-radius: 14px; margin-bottom: 16px;">
@@ -198,7 +198,7 @@
           </div>
 
           <!-- BorderGlow Card 2 -->
-          <div class="border-glow-card" style="--card-bg: #0B1628;">
+          <div class="border-glow-card slide-card" style="--card-bg: #0B1628; position: absolute; top: 0; left: 0; width: 100%; opacity: 0; transition: opacity 0.8s ease-in-out; z-index: 1;">
             <span class="edge-light"></span>
             <div class="border-glow-inner" style="text-align: center;">
               <img src="assets/images/home_resource_2.png" alt="Cartelle Esattoriali" style="width: 100%; height: 210px; object-fit: cover; border-radius: 14px; margin-bottom: 16px;">
@@ -208,7 +208,7 @@
           </div>
 
           <!-- BorderGlow Card 3 -->
-          <div class="border-glow-card" style="--card-bg: #0B1628;">
+          <div class="border-glow-card slide-card" style="--card-bg: #0B1628; position: absolute; top: 0; left: 0; width: 100%; opacity: 0; transition: opacity 0.8s ease-in-out; z-index: 1;">
             <span class="edge-light"></span>
             <div class="border-glow-inner" style="text-align: center;">
               <img src="assets/images/home_resource_3.png" alt="Consulenza Mentorship" style="width: 100%; height: 210px; object-fit: cover; border-radius: 14px; margin-bottom: 16px;">
@@ -217,6 +217,22 @@
             </div>
           </div>
         </div>
+
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('#tools-slider .slide-card');
+            let currentSlide = 0;
+            if (slides.length > 0) {
+              setInterval(() => {
+                slides[currentSlide].style.opacity = '0';
+                slides[currentSlide].style.zIndex = '1';
+                currentSlide = (currentSlide + 1) % slides.length;
+                slides[currentSlide].style.opacity = '1';
+                slides[currentSlide].style.zIndex = '2';
+              }, 3500); // Rotate every 3.5 seconds
+            }
+          });
+        </script>
       </div>
     </section>
 
