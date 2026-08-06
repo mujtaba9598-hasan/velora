@@ -767,6 +767,26 @@ const VELORA_TRANSLATIONS = {
     copyright: "© 2026 Velora Formazione. Tutti i diritti riservati."
   },
   
+      // Calendar Schedule
+    cal_sched_title: "Programma Inizi e Lezioni",
+    cal_sched_label_start: "Inizio Corso:",
+    cal_sched_label_date: "Data e Ora:",
+    cal_sched_label_lesson: "Titolo Lezione:",
+    
+    cal_sched_1_start: "14 Giugno 2026",
+    cal_sched_1_date: "Sabato e Domenica | 09:30 - 17:00",
+    cal_sched_1_lesson: "Teoria Tributaria e Laboratori Pratici in Aula",
+    
+    cal_sched_2_start: "Sessioni Settimanali",
+    cal_sched_2_date: "Venerdì e Sabato | 09:00 - 13:00",
+    cal_sched_2_lesson: "Preparazione ed Esame Certificazione Cittadinanza",
+    
+    cal_sched_3_title: "Sportello Pratiche e Iscrizioni",
+    cal_sched_3_label_start: "Inizio:",
+    cal_sched_3_start: "Sempre Attivo",
+    cal_sched_3_date: "Lunedì - Giovedì | 09:00 - 19:30",
+    cal_sched_3_lesson: "Colloqui Orientamento e Consulenza Assistenza CAF",
+
   en: {
     /* Navigation Link Vocabulary */
     nav_home: "Home",
@@ -1530,4 +1550,23 @@ const VELORA_TRANSLATIONS = {
     link_privacy: "Privacy Policy Notice",
     copyright: "© 2026 Velora Formazione. All rights reserved."
   }
+    // Calendar Schedule
+    cal_sched_title: "Program Starts and Lessons",
+    cal_sched_label_start: "Course Start:",
+    cal_sched_label_date: "Date and Time:",
+    cal_sched_label_lesson: "Lesson Title:",
+    
+    cal_sched_1_start: "June 14, 2026",
+    cal_sched_1_date: "Saturday and Sunday | 09:30 - 17:00",
+    cal_sched_1_lesson: "Tax Theory and Practical Classroom Labs",
+    
+    cal_sched_2_start: "Weekly Sessions",
+    cal_sched_2_date: "Friday and Saturday | 09:00 - 13:00",
+    cal_sched_2_lesson: "Preparation and Citizenship Certification Exam",
+    
+    cal_sched_3_title: "Administration and Enrollment Desk",
+    cal_sched_3_label_start: "Start:",
+    cal_sched_3_start: "Always Active",
+    cal_sched_3_date: "Monday - Thursday | 09:00 - 19:30",
+    cal_sched_3_lesson: "Orientation Interviews and CAF Assistance Consulting",
 };
