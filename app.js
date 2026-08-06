@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
       textDiv.style.flexDirection = "column";
       textDiv.style.justifyContent = "center";
       textDiv.style.lineHeight = "1.1";
-      textDiv.innerHTML = '<span>VELORA</span><span style="font-family: var(--font-body); font-size: 0.55rem; letter-spacing: 1.5px; font-weight: 600; color: var(--color-gold-primary); text-transform: uppercase; margin-top: 2px;">ENTE DI FORMAZIONE</span>';
+      textDiv.innerHTML = '<span>VELORA</span><span style="font-family: var(--font-body); font-size: 0.55rem; letter-spacing: 1.5px; font-weight: 600; color: var(--color-gold-primary); text-transform: uppercase; margin-top: 2px;">ENTE DI FORMAZIONE</span><span style="font-family: var(--font-body); font-size: 0.45rem; letter-spacing: 1.5px; font-weight: 600; color: var(--color-gold-primary); text-transform: uppercase; margin-top: 2px;">GROUP OF COMPANIES</span>';
       logo.appendChild(textDiv);
     }
   });
