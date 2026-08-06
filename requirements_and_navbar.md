@@ -4,10 +4,10 @@
 **Secondary Language:** English (Language toggle button in Navbar)
 
 ## 1. Contact Numbers and Floating Actions
-* **Official Phone Number**: +39 327 626 9708
+* **Official Phone Number**: +3533183329
 * **Official Email Address**: info@veloragroupacademy.com
-* **WhatsApp Chat URL**: https://wa.me/393276269708
-* **Direct Call URL**: tel:+393276269708
+* **WhatsApp Chat URL**: https://wa.me/3533183329
+* **Direct Call URL**: tel:+3533183329
 * **Direct Email URL**: mailto:info@veloragroupacademy.com
 * **Floating Contact Bar**: Every single page will feature a responsive floating action widget containing instant buttons for WhatsApp messaging, direct calling, and email composition.
 
@@ -82,7 +82,7 @@ The navigation bar requires dual language mapping, an active flag switch button,
   * Interactive grids showcasing specific learning resources (Tax Lessons, Welfare Practice, and Practical Workshops).
   * Gated content prompts directing public users to log in to view proprietary training materials.
 * **Comprehensive Footer and Stroke Animation**
-  * Company profile overview, direct contact links (Email, Phone +39 327 626 9708, Headquarters address), social media connection links (Facebook, LinkedIn, Instagram, and TikTok), navigation directory, and mandatory Italian regulatory links (Privacy Policy, Terms and Conditions, Transparency records).
+  * Company profile overview, direct contact links (Email, Phone +3533183329, Headquarters address), social media connection links (Facebook, LinkedIn, Instagram, and TikTok), navigation directory, and mandatory Italian regulatory links (Privacy Policy, Terms and Conditions, Transparency records).
   * Animated Brand Wordmark: Directly beneath the primary footer divider line, display a giant capital text element reading "VELORA" utilizing an interactive SVG stroke drawing and wipe fill effect inspired by StrokeText specifications (stroke width 1.4, draw duration 1.6s, staggered letter animation, and gold or slate coloring).
 
 ## 5. Brand Design System Tokens and Hosting

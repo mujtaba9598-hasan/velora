@@ -50,7 +50,7 @@ const VELORA_TRANSLATIONS = {
     bento_real_estate: "Real Estate",
     bento_enterprise: "Business Enterprise",
     
-    course_caf_title: "Master Diventa un Imprenditore",
+    course_caf_title: "MASTER PER CAF PATRONATO FISCALE",
     course_caf_desc: "Formazione di alta direzione aziendale, pianificazione strategica e know-how operativo per avviare la tua impresa indipendente.",
     
     course_fiscale_title: "Operatore Fiscale 360 Gradi",
@@ -65,7 +65,7 @@ const VELORA_TRANSLATIONS = {
     course_real_title: "Corso Agente Immobiliare",
     course_real_desc: "Qualificazione professionale per iniziare una carriera di successo nel settore dell'intermediazione e gestione immobiliare.",
     
-    course_entrepreneur_title: "Master Diventa un Imprenditore",
+    course_entrepreneur_title: "MASTER PER CAF PATRONATO FISCALE",
     course_entrepreneur_desc: "Acquisizione di leadership commerciale, pianificazione aziendale e know how operativo per avviare il tuo business indipendente.",
     btn_more_info: "Maggiori Informazioni",
     status_coming_soon: "In Arrivo",
@@ -480,7 +480,7 @@ const VELORA_TRANSLATIONS = {
     entrep_p2_btn: "Candidati al Master Imprenditore",
     entrep_promo_title: "Mentorship Dedicata: Ti Accompagniamo all'Avvio Sede",
     entrep_promo_desc: "Grazie al nostro know how pluriennale e alla vasta rete di servizi legali, fiscali e aziendali di A.N.A.S. Provinciale Milano, aiutiamo concretamente gli studenti e i partner a concretizzare il sogno di aprire una propria struttura convenzionata chiavi in mano.",
-    entrep_promo_contact: 'Chiedi informazioni sul pacchetto affiliazione scrivendo a <a href="mailto:info@veloragroupacademy.com" style="color: #C89D42; font-weight: 600;">info@veloragroupacademy.com</a> o telefonando allo <a href="tel:+393276269708" style="color: #FFFFFF; font-weight: 600;">+39 327 626 9708</a>.',
+    entrep_promo_contact: 'Chiedi informazioni sul pacchetto affiliazione scrivendo a <a href="mailto:info@veloragroupacademy.com" style="color: #C89D42; font-weight: 600;">info@veloragroupacademy.com</a> o telefonando allo <a href="tel:+3533183329" style="color: #FFFFFF; font-weight: 600;">+3533183329</a>.',
     form_title_entrep: "Prenota la tua Consulenza Strategica",
     form_subtitle_entrep: "Compila il modulo per un colloquio riservato con i nostri consulenti aziendali: valuteremo insieme la fattibilità e la strategia corretta per il tuo percorso imprenditoriale.",
     form_country_entrep: "Paese di Origine",
@@ -643,7 +643,7 @@ const VELORA_TRANSLATIONS = {
     contact_channels_desc: "Puoi contattare la segreteria scolastica in qualsiasi momento via posta elettronica o telefono. Offriamo colloquio preliminare e assistenza su pratiche di finanziamento in 4 comode rate.",
     contact_wa_title: "Assistenza Whatsapp Immediata",
     contact_wa_desc: "Scrivici per una risposta rapida sui prossimi corsi e posti rimasti disponibili.",
-    contact_wa_btn: "Chatta su WhatsApp (+39 327 626 9708)",
+    contact_wa_btn: "Chatta su WhatsApp (+3533183329)",
     contact_phone_title: "Segreteria Telefonica e Amministrazione",
     contact_hours_title: "🕒 Orari di Apertura Segreteria e Laboratori",
     contact_hours_1: "Lunedì - Venerdì:",
@@ -814,7 +814,7 @@ const VELORA_TRANSLATIONS = {
     bento_real_estate: "Real Estate",
     bento_enterprise: "Business Enterprise",
     
-    course_caf_title: "Master Become an Entrepreneur",
+    course_caf_title: "MASTER PER CAF PATRONATO FISCALE",
     course_caf_desc: "Executive business leadership training, strategic company planning, and operational know how to launch your independent enterprise.",
     
     course_fiscale_title: "360 Degree Fiscal Operator",
@@ -829,7 +829,7 @@ const VELORA_TRANSLATIONS = {
     course_real_title: "Real Estate Agent Certification",
     course_real_desc: "Professional qualification track designed to build an independent career in residential and commercial real estate brokerage.",
     
-    course_entrepreneur_title: "Master Become an Entrepreneur",
+    course_entrepreneur_title: "MASTER PER CAF PATRONATO FISCALE",
     course_entrepreneur_desc: "Acquisition of commercial leadership, business planning, and operational know-how to launch your independent business.",
     btn_more_info: "More Information",
     status_coming_soon: "Coming Soon",
@@ -1244,7 +1244,7 @@ const VELORA_TRANSLATIONS = {
     entrep_p2_btn: "Apply for the Entrepreneur Master",
     entrep_promo_title: "Dedicated Mentorship: We Accompany You to Open Your Office",
     entrep_promo_desc: "Thanks to our long-standing know-how and the vast network of legal, fiscal and corporate services of A.N.A.S. Provinciale Milano, we concretely help students and partners realize the dream of opening their own turnkey affiliated structure.",
-    entrep_promo_contact: 'Ask for information on the affiliation package by writing to <a href="mailto:info@veloragroupacademy.com" style="color: #C89D42; font-weight: 600;">info@veloragroupacademy.com</a> or calling <a href="tel:+393276269708" style="color: #FFFFFF; font-weight: 600;">+39 327 626 9708</a>.',
+    entrep_promo_contact: 'Ask for information on the affiliation package by writing to <a href="mailto:info@veloragroupacademy.com" style="color: #C89D42; font-weight: 600;">info@veloragroupacademy.com</a> or calling <a href="tel:+3533183329" style="color: #FFFFFF; font-weight: 600;">+3533183329</a>.',
     form_title_entrep: "Book Your Strategic Consultation",
     form_subtitle_entrep: "Fill out the form for a confidential interview with our business consultants: together we will evaluate the feasibility and the right strategy for your entrepreneurial journey.",
     form_country_entrep: "Country of Origin",
@@ -1407,7 +1407,7 @@ const VELORA_TRANSLATIONS = {
     contact_channels_desc: "You can contact the school secretariat at any time via email or phone. We offer preliminary interviews and assistance with funding procedures in 4 easy installments.",
     contact_wa_title: "Immediate WhatsApp Assistance",
     contact_wa_desc: "Write to us for a quick response on upcoming courses and remaining available places.",
-    contact_wa_btn: "Chat on WhatsApp (+39 327 626 9708)",
+    contact_wa_btn: "Chat on WhatsApp (+3533183329)",
     contact_phone_title: "Telephone Secretariat and Administration",
     contact_hours_title: "🕒 Secretariat and Laboratory Opening Hours",
     contact_hours_1: "Monday - Friday:",

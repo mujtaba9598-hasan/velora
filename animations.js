@@ -250,10 +250,10 @@ function injectGlobalWidgets() {
     const widget = document.createElement("div");
     widget.className = "floating-widget";
     widget.innerHTML = `
-      <a href="https://wa.me/393276269708" target="_blank" title="WhatsApp Assistance" class="widget-btn btn-whatsapp" aria-label="WhatsApp Assistance">
+      <a href="https://wa.me/3533183329" target="_blank" title="WhatsApp Assistance" class="widget-btn btn-whatsapp" aria-label="WhatsApp Assistance">
         <svg viewBox="0 0 24 24" width="28" height="28" fill="white"><path d="M12.031 2c-5.467 0-9.914 4.446-9.914 9.914 0 1.954.568 3.774 1.554 5.313L2.518 21.48l4.417-1.127c1.482.934 3.235 1.474 5.096 1.474 5.467 0 9.914-4.447 9.914-9.914S17.498 2 12.031 2zM12.031 20.09c-1.636 0-3.17-.492-4.462-1.343l-.32-.212-2.635.672.705-2.564-.23-.357A8.103 8.103 0 0 1 3.844 11.914c0-4.515 3.673-8.188 8.187-8.188s8.187 3.673 8.187 8.188-3.673 8.176-8.187 8.176zm4.493-6.143c-.246-.123-1.455-.717-1.68-.8-.225-.082-.389-.123-.553.123s-.634.8-.778.963c-.143.164-.287.184-.533.061-.246-.123-1.037-.382-1.977-1.22-.731-.652-1.225-1.458-1.368-1.704-.143-.246-.015-.379.108-.501.111-.111.246-.287.369-.43.123-.143.164-.246.246-.41.082-.164.041-.307-.02-.43-.061-.123-.553-1.332-.758-1.824-.199-.479-.401-.414-.553-.422-.143-.008-.307-.008-.471-.008s-.43.061-.655.307c-.225.246-.86.84-.86 2.049 0 1.209.881 2.377 1.004 2.541.123.164 1.733 2.645 4.198 3.711.587.254 1.045.406 1.401.52.59.188 1.127.162 1.551.098.473-.072 1.455-.594 1.66-1.168.205-.574.205-1.065.143-1.168-.061-.102-.225-.164-.471-.287z"/></svg>
       </a>
-      <a href="tel:+393276269708" title="Call Operations Desk" class="widget-btn btn-phone" aria-label="Call Operations Desk">
+      <a href="tel:+3533183329" title="Call Operations Desk" class="widget-btn btn-phone" aria-label="Call Operations Desk">
         <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
       </a>
       <a href="mailto:info@veloragroupacademy.com" title="Email Inquiry" class="widget-btn btn-email" aria-label="Email Inquiry">
