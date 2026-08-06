@@ -148,7 +148,7 @@ const VELORA_TRANSLATIONS = {
     about_network_badge: "Sinergias Accademica e Istituzionale",
     about_network_title: "Crediamo Inderogabilmente nel Valore della Rete",
     about_network_p1: "Per questo motivo collaboriamo stabilmente con scuole pubbliche, università di studi convenzionate, istituzioni territoriali, associazioni di categoria e grandi aziende commerciali.",
-    about_network_p2: "Integrando i nostri servizi di formazione qualificata, condividendo know how pratico e fornendo supporto strategico mirato, aumentiamo sensibilmente l'efficacia didattica e la scalabilità di ogni progetto educativo o sociale sul territorio lombardo e nazionale.",
+    about_network_p2: "Attraverso l'integrazione di servizi di formazione qualificata, la condivisione di competenze pratiche e un supporto strategico mirato, incrementiamo in modo significativo l'efficacia didattica e la capacità di sviluppo di ogni progetto educativo e sociale, operando sul territorio lombardo e a livello nazionale.",
     about_network_btn: "Proponi un Progetto Accademico di Rete",
     
     about_b2b_title: "Diventa Partner Commerciale e Apri la Tua Sede",
