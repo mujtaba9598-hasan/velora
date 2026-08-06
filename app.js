@@ -20,7 +20,13 @@ document.addEventListener("DOMContentLoaded", function () {
     if (img) {
       logo.innerHTML = "";
       logo.appendChild(img);
-      logo.appendChild(document.createTextNode(" VELORA"));
+      const textDiv = document.createElement("div");
+      textDiv.style.display = "flex";
+      textDiv.style.flexDirection = "column";
+      textDiv.style.justifyContent = "center";
+      textDiv.style.lineHeight = "1.1";
+      textDiv.innerHTML = '<span>VELORA</span><span style="font-family: var(--font-body); font-size: 0.55rem; letter-spacing: 1.5px; font-weight: 600; color: var(--color-gold-primary); text-transform: uppercase; margin-top: 2px;">ENTE DI FORMAZIONE</span>';
+      logo.appendChild(textDiv);
     }
   });
 
@@ -203,7 +209,10 @@ document.addEventListener("DOMContentLoaded", function () {
     dockWrapper.innerHTML = `
       <a href="index.html" class="brand-logo" title="Velora Formazione Home">
         <img src="assets/images/logo_velora.png" alt="Velora Formazione">
-        VELORA
+        <div style="display: flex; flex-direction: column; justify-content: center; line-height: 1.1;">
+          <span>VELORA</span>
+          <span style="font-family: var(--font-body); font-size: 0.55rem; letter-spacing: 1.5px; font-weight: 600; color: var(--color-gold-primary); text-transform: uppercase; margin-top: 2px;">ENTE DI FORMAZIONE</span>
+        </div>
       </a>
 
       <nav class="magnetic-dock-container" id="magnetic-dock-nav">
