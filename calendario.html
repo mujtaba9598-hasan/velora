@@ -176,11 +176,16 @@
               background: rgba(255,255,255,0.03);
               border: 1px solid rgba(255,255,255,0.05);
               border-radius: 8px;
-              padding: 14px 0;
+              padding: 10px 4px;
               color: #F8FAFC;
               font-weight: 600;
               cursor: pointer;
               transition: all 0.3s;
+              min-height: 85px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: flex-start;
             }
             .cal-day:hover:not(.empty-day) {
               background: rgba(200, 157, 66, 0.15);
@@ -193,10 +198,19 @@
               cursor: default;
             }
             .cal-day.today {
-              background: rgba(200, 157, 66, 0.3);
+              background: rgba(200, 157, 66, 0.2);
               border-color: #C89D42;
               color: #FFF;
-              box-shadow: 0 0 15px rgba(200, 157, 66, 0.4);
+              box-shadow: inset 0 0 10px rgba(200, 157, 66, 0.3);
+            }
+            .event-label {
+              font-size: 0.65rem;
+              margin-top: 6px;
+              line-height: 1.2;
+              text-align: center;
+              padding: 2px 4px;
+              border-radius: 4px;
+              width: 90%;
             }
           </style>
 
@@ -222,18 +236,30 @@
 
                 const today = new Date();
 
-                // Empty days for previous month
                 for (let x = 0; x < firstDayIndex; x++) {
                   const emptyDiv = document.createElement("div");
                   emptyDiv.classList.add("cal-day", "empty-day");
                   calendarDays.appendChild(emptyDiv);
                 }
 
-                // Days of current month
                 for (let i = 1; i <= lastDay; i++) {
                   const dayDiv = document.createElement("div");
                   dayDiv.classList.add("cal-day");
-                  dayDiv.textContent = i;
+                  
+                  const dayOfWeek = new Date(year, month, i).getDay();
+                  let eventHtml = '';
+                  
+                  if (dayOfWeek >= 1 && dayOfWeek <= 4) {
+                      eventHtml = '<div class="event-label" style="background: rgba(200,157,66,0.2); color: #C89D42;">Sportello & CAF</div>';
+                  } else if (dayOfWeek === 5) {
+                      eventHtml = '<div class="event-label" style="background: rgba(37,211,102,0.2); color: #25D366;">Segreteria B2B</div>';
+                  } else if (dayOfWeek === 6) {
+                      eventHtml = '<div class="event-label" style="background: rgba(47,128,237,0.2); color: #2F80ED;">Master & Esami</div>';
+                  } else if (dayOfWeek === 0) {
+                      eventHtml = '<div class="event-label" style="background: rgba(227,186,94,0.2); color: #E3BA5E;">Laboratori</div>';
+                  }
+
+                  dayDiv.innerHTML = `<span style="font-size: 1.1rem; margin-bottom: 2px;">${i}</span>${eventHtml}`;
 
                   if (i === today.getDate() && month === today.getMonth() && year === today.getFullYear()) {
                     dayDiv.classList.add("today");
