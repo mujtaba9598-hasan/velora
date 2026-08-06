@@ -153,44 +153,109 @@
             I nostri sportelli di ricevimento ti attendono dal Lunedì al Sabato con orari prolungati. Puoi presentarti di persona a Milano o concordare un appuntamento telefonico di orientamento.
           </p>
 
-          <div style="overflow-x: auto;">
-            <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.98rem;">
-              <thead>
-                <tr style="border-bottom: 2px solid #C89D42; color: #C89D42; text-transform: uppercase; font-size: 0.85rem;">
-                  <th data-i18n="cal_th_day" style="padding: 14px 18px;">Giornata</th>
-                  <th data-i18n="cal_th_morning" style="padding: 14px 18px;">Fascia Mattutina (09:00 - 13:00)</th>
-                  <th data-i18n="cal_th_afternoon" style="padding: 14px 18px;">Fascia Pomeridiana e Sera (14:30 - 19:30)</th>
-                  <th data-i18n="cal_th_service" style="padding: 14px 18px;">Servizi di Sportello e Assistenza</th>
-                </tr>
-              </thead>
-              <tbody style="color: #F8FAFC; line-height: 1.8;">
-                <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
-                  <td data-i18n="cal_td_day1" style="padding: 16px 18px; font-weight: 700; color: #C89D42;">Lunedì - Giovedì</td>
-                  <td data-i18n="cal_td_m1" style="padding: 16px 18px;">09:00 - 13:00 (Sportello Pratiche e Iscrizioni)</td>
-                  <td data-i18n="cal_td_a1" style="padding: 16px 18px;">14:30 - 19:30 (Colloqui Orientamento e Progetto 4 Rate)</td>
-                  <td data-i18n="cal_td_s1" style="padding: 16px 18px; color: #94A3B8;">Assistenza CAF, verifica requisiti corsi gratuiti, supporto Area Studente.</td>
-                </tr>
-                <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
-                  <td data-i18n="cal_td_day2" style="padding: 16px 18px; font-weight: 700; color: #25D366;">Venerdì</td>
-                  <td data-i18n="cal_td_m2" style="padding: 16px 18px;">09:00 - 13:00 (Segreteria Esami Lingua e Partner B2B)</td>
-                  <td data-i18n="cal_td_a2" style="padding: 16px 18px;">14:30 - 19:00 (Consulenza Apri la Tua Sede Chiavi in Mano)</td>
-                  <td data-i18n="cal_td_s2" style="padding: 16px 18px; color: #94A3B8;">Accreditamento sedi convenzionate e colloqui con tutor madrelingua.</td>
-                </tr>
-                <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
-                  <td data-i18n="cal_td_day3" style="padding: 16px 18px; font-weight: 700; color: #2F80ED;">Sabato</td>
-                  <td data-i18n="cal_td_m3" style="padding: 16px 18px;">09:30 - 13:00 (Sessioni d'Esame B1/A2 e Master Teoria)</td>
-                  <td data-i18n="cal_td_a3" style="padding: 16px 18px;">14:00 - 17:00 (Lezioni in Presenza Aula Milano e Coworking)</td>
-                  <td data-i18n="cal_td_s3" style="padding: 16px 18px; color: #94A3B8;">Didattica weekend per professionisti occupati e test cittadinanza.</td>
-                </tr>
-                <tr>
-                  <td data-i18n="cal_td_day4" style="padding: 16px 18px; font-weight: 700; color: #E3BA5E;">Domenica</td>
-                  <td data-i18n="cal_td_m4" style="padding: 16px 18px; color: #25D366;">Su Appuntamento (09:30 - 13:00)</td>
-                  <td data-i18n="cal_td_a4" style="padding: 16px 18px; color: #25D366;">Laboratori Pratici in Aula e Streaming Video HD</td>
-                  <td data-i18n="cal_td_s4" style="padding: 16px 18px; color: #94A3B8;">Simulazioni cartelle reali per Operatore Fiscale e Master CAF.</td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="calendar-widget-container" style="max-width: 800px; margin: 0 auto;">
+            <div class="calendar-wrapper" style="background: rgba(11, 22, 40, 0.8); border-radius: 16px; border: 1px solid rgba(200, 157, 66, 0.4); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+              <div class="calendar-header" style="background: rgba(17, 34, 63, 0.9); padding: 24px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(200, 157, 66, 0.2);">
+                <button id="prev-month" style="background: transparent; border: 1px solid rgba(200, 157, 66, 0.5); border-radius: 50%; color: #C89D42; width: 40px; height: 40px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s;" onmouseover="this.style.background='rgba(200,157,66,0.2)'" onmouseout="this.style.background='transparent'">&#10094;</button>
+                <h3 id="month-year" style="color: #F8FAFC; margin: 0; font-size: 1.6rem; font-weight: 700; letter-spacing: 1px;">Agosto 2026</h3>
+                <button id="next-month" style="background: transparent; border: 1px solid rgba(200, 157, 66, 0.5); border-radius: 50%; color: #C89D42; width: 40px; height: 40px; font-size: 1.2rem; cursor: pointer; transition: all 0.3s;" onmouseover="this.style.background='rgba(200,157,66,0.2)'" onmouseout="this.style.background='transparent'">&#10095;</button>
+              </div>
+              <div class="calendar-body" style="padding: 24px;">
+                <div class="weekdays" style="display: grid; grid-template-columns: repeat(7, 1fr); text-align: center; font-weight: 700; color: #C89D42; font-size: 0.95rem; margin-bottom: 16px;">
+                  <div>Dom</div><div>Lun</div><div>Mar</div><div>Mer</div><div>Gio</div><div>Ven</div><div>Sab</div>
+                </div>
+                <div id="calendar-days" style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 12px; text-align: center;">
+                  <!-- Days will be generated by JS -->
+                </div>
+              </div>
+            </div>
           </div>
+
+          <style>
+            .cal-day {
+              background: rgba(255,255,255,0.03);
+              border: 1px solid rgba(255,255,255,0.05);
+              border-radius: 8px;
+              padding: 14px 0;
+              color: #F8FAFC;
+              font-weight: 600;
+              cursor: pointer;
+              transition: all 0.3s;
+            }
+            .cal-day:hover:not(.empty-day) {
+              background: rgba(200, 157, 66, 0.15);
+              border-color: rgba(200, 157, 66, 0.5);
+              transform: translateY(-2px);
+            }
+            .cal-day.empty-day {
+              background: transparent;
+              border: none;
+              cursor: default;
+            }
+            .cal-day.today {
+              background: rgba(200, 157, 66, 0.3);
+              border-color: #C89D42;
+              color: #FFF;
+              box-shadow: 0 0 15px rgba(200, 157, 66, 0.4);
+            }
+          </style>
+
+          <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              const monthYear = document.getElementById("month-year");
+              const calendarDays = document.getElementById("calendar-days");
+              const prevBtn = document.getElementById("prev-month");
+              const nextBtn = document.getElementById("next-month");
+
+              const months = ["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"];
+              let currentDate = new Date();
+
+              function renderCalendar() {
+                calendarDays.innerHTML = "";
+                const year = currentDate.getFullYear();
+                const month = currentDate.getMonth();
+
+                monthYear.textContent = `${months[month]} ${year}`;
+
+                const firstDayIndex = new Date(year, month, 1).getDay();
+                const lastDay = new Date(year, month + 1, 0).getDate();
+
+                const today = new Date();
+
+                // Empty days for previous month
+                for (let x = 0; x < firstDayIndex; x++) {
+                  const emptyDiv = document.createElement("div");
+                  emptyDiv.classList.add("cal-day", "empty-day");
+                  calendarDays.appendChild(emptyDiv);
+                }
+
+                // Days of current month
+                for (let i = 1; i <= lastDay; i++) {
+                  const dayDiv = document.createElement("div");
+                  dayDiv.classList.add("cal-day");
+                  dayDiv.textContent = i;
+
+                  if (i === today.getDate() && month === today.getMonth() && year === today.getFullYear()) {
+                    dayDiv.classList.add("today");
+                  }
+                  
+                  calendarDays.appendChild(dayDiv);
+                }
+              }
+
+              prevBtn.addEventListener("click", () => {
+                currentDate.setMonth(currentDate.getMonth() - 1);
+                renderCalendar();
+              });
+
+              nextBtn.addEventListener("click", () => {
+                currentDate.setMonth(currentDate.getMonth() + 1);
+                renderCalendar();
+              });
+
+              renderCalendar();
+            });
+          </script>
         </div>
       </div>
     </section>
