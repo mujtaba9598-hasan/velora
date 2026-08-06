@@ -177,13 +177,54 @@
     </div>
   </footer>
 
+  
   <script>
-    /* Simulated authentication verification trigger */
     document.getElementById("login-form-verification")?.addEventListener("submit", function(e) {
       e.preventDefault();
-      alert("Autenticazione verificata con successo: reindirizzamento al portale didattico Area Studente in corso.");
-      window.location.href = "area_studente.html";
+      
+      const email = this.querySelector('input[type="email"]').value || this.querySelector('input[type="text"]').value;
+      const password = this.querySelector('input[type="password"]').value;
+      const errorMsg = document.getElementById('login-error');
+      if (errorMsg) errorMsg.style.display = 'none';
+
+      fetch('backend/api.php?action=login', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({username: email, password: password})
+      })
+      .then(res => res.json())
+      .then(data => {
+          if (data.status === 'success') {
+              if (data.role === 'admin') {
+                  window.location.href = 'admin.html';
+              } else {
+                  window.location.href = 'area_studente.html';
+              }
+          } else {
+              if (!errorMsg) {
+                  const div = document.createElement('div');
+                  div.id = 'login-error';
+                  div.style.color = '#ff6b6b';
+                  div.style.background = 'rgba(255,0,0,0.1)';
+                  div.style.padding = '10px';
+                  div.style.marginBottom = '15px';
+                  div.style.borderRadius = '5px';
+                  div.innerText = data.message;
+                  this.insertBefore(div, this.firstChild);
+              } else {
+                  errorMsg.innerText = data.message;
+                  errorMsg.style.display = 'block';
+              }
+          }
+      })
+      .catch(err => {
+          console.error("Login Error:", err);
+          alert("Could not connect to the backend server.");
+      });
     });
   </script>
+
 </body>
 </html>

@@ -10,6 +10,25 @@
   <script src="translations.js" defer></script>
   <script src="app.js" defer></script>
   <script src="animations.js" defer></script>
+
+<script>
+  // Auth Check
+  fetch('backend/api.php?action=check_session')
+    .then(res => res.json())
+    .then(data => {
+      if (data.status !== 'success') {
+        window.location.href = 'accedi.html';
+      }
+    })
+    .catch(err => {
+      console.warn("Could not check session", err);
+    });
+    
+  function logout() {
+      fetch('backend/api.php?action=logout')
+      .then(() => window.location.href = 'accedi.html');
+  }
+</script>
 </head>
 <body>
 
