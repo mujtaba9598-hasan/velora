@@ -21,7 +21,7 @@ const VELORA_TRANSLATIONS = {
     /* Hero Banner Copy */
     hero_group: "GRUPPO DI AZIENDE",
     hero_title: "Eccellenza nella Formazione Professionale",
-    hero_subtitle: "La prima accademia qualificata in Italia per la formazione di operatori fiscali, esperti di welfare e consulenti d'impresa con modelli di didattica agile.",
+    hero_subtitle: "Tra le prime Academy qualificate in Italia per la formazione CAF e Patronato Fiscale. Un percorso formativo basato su una didattica agile, pratica e orientata alle competenze richieste dal mercato del lavoro",
     btn_discover: "Scopri i Master",
     btn_student: "Entra nel Portale",
 
@@ -783,7 +783,7 @@ const VELORA_TRANSLATIONS = {
     /* Hero Banner Copy */
     hero_group: "GROUP OF COMPANIES",
     hero_title: "Excellence in Professional Vocational Education",
-    hero_subtitle: "Italy's leading educational academy for training certified tax operators, welfare specialists, and corporate business consultants with agile teaching methodologies.",
+    hero_subtitle: "Among the first qualified Academies in Italy for CAF and Tax Patronage training. A training path based on an agile, practical teaching method oriented towards the skills required by the job market",
     btn_discover: "Explore Masters",
     btn_student: "Enter Learning Portal",
 
