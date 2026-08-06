@@ -663,7 +663,7 @@ const VELORA_TRANSLATIONS = {
     form_contact_btn: "Invia Richiesta di Contatto ed Entra in Rete",
     contact_map_title: "Sede Principale e Sede Secondaria",
     contact_map_desc: "Osio Sotto (BG) e Milano (MI) | Facilmente raggiungibili",
-    contact_trust_quote: "\"Thank you for your trust: Velora Formazione is honored to guide and accompany your professional career growth.\"",
+    contact_trust_quote: "\"Grazie per la tua fiducia: Velora Formazione è onorata di guidare e accompagnare la tua crescita professionale.\"",
     contact_trust_desc: "Siamo a vostra completa disposizione per offrirvi un'assistenza didattica e di orientamento senza eguali in Italia.",
 
     /* Accedi Page */
