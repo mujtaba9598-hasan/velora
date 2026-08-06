@@ -19,6 +19,7 @@ const VELORA_TRANSLATIONS = {
     lang_btn: "🇮🇹 IT",
 
     /* Hero Banner Copy */
+    hero_group: "GRUPPO DI AZIENDE",
     hero_title: "Eccellenza nella Formazione Professionale",
     hero_subtitle: "La prima accademia qualificata in Italia per la formazione di operatori fiscali, esperti di welfare e consulenti d'impresa con modelli di didattica agile.",
     btn_discover: "Scopri i Master",
@@ -780,6 +781,7 @@ const VELORA_TRANSLATIONS = {
     lang_btn: "🇬🇧 EN",
 
     /* Hero Banner Copy */
+    hero_group: "GROUP OF COMPANIES",
     hero_title: "Excellence in Professional Vocational Education",
     hero_subtitle: "Italy's leading educational academy for training certified tax operators, welfare specialists, and corporate business consultants with agile teaching methodologies.",
     btn_discover: "Explore Masters",
