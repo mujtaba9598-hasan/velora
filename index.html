@@ -186,50 +186,110 @@
           <span class="guidebook-badge" data-i18n="tools_badge">Materiali e Didattica Interattiva</span>
           <h2 data-i18n="tools_title" style="font-size: 2rem; margin-top: 10px;">Strumenti Operativi e Laboratori Digitali</h2>
         </div>
-        <div class="simple-slider" id="tools-slider" style="position: relative; max-width: 500px; margin: 0 auto; min-height: 380px;">
-          <!-- BorderGlow Card 1 -->
-          <div class="border-glow-card slide-card" style="--card-bg: #0B1628; position: absolute; top: 0; left: 0; width: 100%; opacity: 1; transition: opacity 0.8s ease-in-out; z-index: 2;">
-            <span class="edge-light"></span>
-            <div class="border-glow-inner" style="text-align: center;">
-              <img src="assets/images/home_resource_1.png" alt="Piattaforme INPS" style="width: 100%; height: 210px; object-fit: cover; border-radius: 14px; margin-bottom: 16px;">
-              <h4 data-i18n="tools_1_title" style="color: #F8FAFC; font-size: 1.2rem; margin-bottom: 8px; font-weight: 700;">Piattaforme Simulate INPS</h4>
-              <p data-i18n="tools_1_desc" style="color: #94A3B8; font-size: 0.95rem; margin-bottom: 0;">Esercitazioni guidate su portali telematici ufficiali per operatori civici e fiscali.</p>
+        <div class="simple-slider-wrapper" style="position: relative; max-width: 500px; margin: 0 auto;">
+          <div class="simple-slider" id="tools-slider" style="position: relative; width: 100%; min-height: 380px;">
+            <!-- BorderGlow Card 1 -->
+            <div class="border-glow-card slide-card" style="--card-bg: #0B1628; position: absolute; top: 0; left: 0; width: 100%; opacity: 1; transition: opacity 0.8s ease-in-out; z-index: 2;">
+              <span class="edge-light"></span>
+              <div class="border-glow-inner" style="text-align: center;">
+                <img src="assets/images/home_resource_1.png" alt="Piattaforme INPS" style="width: 100%; height: 210px; object-fit: cover; border-radius: 14px; margin-bottom: 16px;">
+                <h4 data-i18n="tools_1_title" style="color: #F8FAFC; font-size: 1.2rem; margin-bottom: 8px; font-weight: 700;">Piattaforme Simulate INPS</h4>
+                <p data-i18n="tools_1_desc" style="color: #94A3B8; font-size: 0.95rem; margin-bottom: 0;">Esercitazioni guidate su portali telematici ufficiali per operatori civici e fiscali.</p>
+              </div>
             </div>
+
+            <!-- BorderGlow Card 2 -->
+            <div class="border-glow-card slide-card" style="--card-bg: #0B1628; position: absolute; top: 0; left: 0; width: 100%; opacity: 0; transition: opacity 0.8s ease-in-out; z-index: 1;">
+              <span class="edge-light"></span>
+              <div class="border-glow-inner" style="text-align: center;">
+                <img src="assets/images/home_resource_2.png" alt="Cartelle Esattoriali" style="width: 100%; height: 210px; object-fit: cover; border-radius: 14px; margin-bottom: 16px;">
+                <h4 data-i18n="tools_2_title" style="color: #F8FAFC; font-size: 1.2rem; margin-bottom: 8px; font-weight: 700;">Cartelle Esattoriali e Fiscali</h4>
+                <p data-i18n="tools_2_desc" style="color: #94A3B8; font-size: 0.95rem; margin-bottom: 0;">Casi pratici di contabilità, dichiarazione dei redditi e gestione pratiche ISEE.</p>
+              </div>
+            </div>
+
+            <!-- BorderGlow Card 3 -->
+            <div class="border-glow-card slide-card" style="--card-bg: #0B1628; position: absolute; top: 0; left: 0; width: 100%; opacity: 0; transition: opacity 0.8s ease-in-out; z-index: 1;">
+              <span class="edge-light"></span>
+              <div class="border-glow-inner" style="text-align: center;">
+                <img src="assets/images/home_resource_3.png" alt="Consulenza Mentorship" style="width: 100%; height: 210px; object-fit: cover; border-radius: 14px; margin-bottom: 16px;">
+                <h4 data-i18n="tools_3_title" style="color: #F8FAFC; font-size: 1.2rem; margin-bottom: 8px; font-weight: 700;">Consulenza e Mentorship</h4>
+                <p data-i18n="tools_3_desc" style="color: #94A3B8; font-size: 0.95rem; margin-bottom: 0;">Affiancamento continuo da parte di consulenti tributari esperti, tutor e docenti qualificati.</p>
+              </div>
+            </div>
+            
+            <!-- Navigation Arrows -->
+            <button class="slider-btn prev-btn" aria-label="Previous Slide" style="position: absolute; top: 50%; left: -20px; transform: translateY(-50%); background: rgba(11, 22, 40, 0.7); border: 1px solid rgba(200, 157, 66, 0.5); color: #C89D42; width: 40px; height: 40px; border-radius: 50%; font-size: 1.2rem; cursor: pointer; z-index: 10; display: flex; align-items: center; justify-content: center; transition: all 0.2s;">&#10094;</button>
+            <button class="slider-btn next-btn" aria-label="Next Slide" style="position: absolute; top: 50%; right: -20px; transform: translateY(-50%); background: rgba(11, 22, 40, 0.7); border: 1px solid rgba(200, 157, 66, 0.5); color: #C89D42; width: 40px; height: 40px; border-radius: 50%; font-size: 1.2rem; cursor: pointer; z-index: 10; display: flex; align-items: center; justify-content: center; transition: all 0.2s;">&#10095;</button>
           </div>
 
-          <!-- BorderGlow Card 2 -->
-          <div class="border-glow-card slide-card" style="--card-bg: #0B1628; position: absolute; top: 0; left: 0; width: 100%; opacity: 0; transition: opacity 0.8s ease-in-out; z-index: 1;">
-            <span class="edge-light"></span>
-            <div class="border-glow-inner" style="text-align: center;">
-              <img src="assets/images/home_resource_2.png" alt="Cartelle Esattoriali" style="width: 100%; height: 210px; object-fit: cover; border-radius: 14px; margin-bottom: 16px;">
-              <h4 data-i18n="tools_2_title" style="color: #F8FAFC; font-size: 1.2rem; margin-bottom: 8px; font-weight: 700;">Cartelle Esattoriali e Fiscali</h4>
-              <p data-i18n="tools_2_desc" style="color: #94A3B8; font-size: 0.95rem; margin-bottom: 0;">Casi pratici di contabilità, dichiarazione dei redditi e gestione pratiche ISEE.</p>
-            </div>
-          </div>
-
-          <!-- BorderGlow Card 3 -->
-          <div class="border-glow-card slide-card" style="--card-bg: #0B1628; position: absolute; top: 0; left: 0; width: 100%; opacity: 0; transition: opacity 0.8s ease-in-out; z-index: 1;">
-            <span class="edge-light"></span>
-            <div class="border-glow-inner" style="text-align: center;">
-              <img src="assets/images/home_resource_3.png" alt="Consulenza Mentorship" style="width: 100%; height: 210px; object-fit: cover; border-radius: 14px; margin-bottom: 16px;">
-              <h4 data-i18n="tools_3_title" style="color: #F8FAFC; font-size: 1.2rem; margin-bottom: 8px; font-weight: 700;">Consulenza e Mentorship</h4>
-              <p data-i18n="tools_3_desc" style="color: #94A3B8; font-size: 0.95rem; margin-bottom: 0;">Affiancamento continuo da parte di consulenti tributari esperti, tutor e docenti qualificati.</p>
-            </div>
+          <!-- Dots -->
+          <div class="slider-dots" style="text-align: center; margin-top: 16px; display: flex; justify-content: center; gap: 10px;">
+            <span class="dot active-dot" data-slide="0" style="cursor: pointer; height: 10px; width: 10px; margin: 0; background-color: #C89D42; border-radius: 50%; display: inline-block; transition: background-color 0.3s; box-shadow: 0 0 5px rgba(200,157,66,0.5);"></span>
+            <span class="dot" data-slide="1" style="cursor: pointer; height: 10px; width: 10px; margin: 0; background-color: #475569; border-radius: 50%; display: inline-block; transition: background-color 0.3s;"></span>
+            <span class="dot" data-slide="2" style="cursor: pointer; height: 10px; width: 10px; margin: 0; background-color: #475569; border-radius: 50%; display: inline-block; transition: background-color 0.3s;"></span>
           </div>
         </div>
 
         <script>
           document.addEventListener('DOMContentLoaded', function() {
             const slides = document.querySelectorAll('#tools-slider .slide-card');
+            const dots = document.querySelectorAll('.slider-dots .dot');
+            const prevBtn = document.querySelector('.prev-btn');
+            const nextBtn = document.querySelector('.next-btn');
             let currentSlide = 0;
+            let slideInterval;
+
+            function goToSlide(index) {
+              slides[currentSlide].style.opacity = '0';
+              slides[currentSlide].style.zIndex = '1';
+              dots[currentSlide].style.backgroundColor = '#475569';
+              dots[currentSlide].style.boxShadow = 'none';
+              
+              currentSlide = (index + slides.length) % slides.length;
+              
+              slides[currentSlide].style.opacity = '1';
+              slides[currentSlide].style.zIndex = '2';
+              dots[currentSlide].style.backgroundColor = '#C89D42';
+              dots[currentSlide].style.boxShadow = '0 0 5px rgba(200,157,66,0.5)';
+            }
+
+            function nextSlide() {
+              goToSlide(currentSlide + 1);
+            }
+
+            function prevSlide() {
+              goToSlide(currentSlide - 1);
+            }
+
+            function startSlideShow() {
+              slideInterval = setInterval(nextSlide, 4500);
+            }
+
+            function resetInterval() {
+              clearInterval(slideInterval);
+              startSlideShow();
+            }
+
             if (slides.length > 0) {
-              setInterval(() => {
-                slides[currentSlide].style.opacity = '0';
-                slides[currentSlide].style.zIndex = '1';
-                currentSlide = (currentSlide + 1) % slides.length;
-                slides[currentSlide].style.opacity = '1';
-                slides[currentSlide].style.zIndex = '2';
-              }, 3500); // Rotate every 3.5 seconds
+              startSlideShow();
+
+              prevBtn.addEventListener('click', () => {
+                prevSlide();
+                resetInterval();
+              });
+
+              nextBtn.addEventListener('click', () => {
+                nextSlide();
+                resetInterval();
+              });
+
+              dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                  goToSlide(index);
+                  resetInterval();
+                });
+              });
             }
           });
         </script>
