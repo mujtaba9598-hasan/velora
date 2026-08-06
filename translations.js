@@ -764,8 +764,7 @@ const VELORA_TRANSLATIONS = {
     col_info: "Informazioni",
     link_transparency: "Rendicontazione e Trasparenza",
     link_privacy: "Informativa sulla Privacy",
-    copyright: "© 2026 Velora Formazione. Tutti i diritti riservati."
-  },
+    copyright: "© 2026 Velora Formazione. Tutti i diritti riservati.",
   
       // Calendar Schedule
     cal_sched_title: "Programma Inizi e Lezioni",
@@ -785,7 +784,8 @@ const VELORA_TRANSLATIONS = {
     cal_sched_3_label_start: "Inizio:",
     cal_sched_3_start: "Sempre Attivo",
     cal_sched_3_date: "Lunedì - Giovedì | 09:00 - 19:30",
-    cal_sched_3_lesson: "Colloqui Orientamento e Consulenza Assistenza CAF",
+    cal_sched_3_lesson: "Colloqui Orientamento e Consulenza Assistenza CAF"
+  },
 
   en: {
     /* Navigation Link Vocabulary */
@@ -1548,8 +1548,7 @@ const VELORA_TRANSLATIONS = {
     col_info: "Information",
     link_transparency: "Transparency and Records",
     link_privacy: "Privacy Policy Notice",
-    copyright: "© 2026 Velora Formazione. All rights reserved."
-  }
+    copyright: "© 2026 Velora Formazione. All rights reserved.",
     // Calendar Schedule
     cal_sched_title: "Program Starts and Lessons",
     cal_sched_label_start: "Course Start:",
@@ -1568,5 +1567,7 @@ const VELORA_TRANSLATIONS = {
     cal_sched_3_label_start: "Start:",
     cal_sched_3_start: "Always Active",
     cal_sched_3_date: "Monday - Thursday | 09:00 - 19:30",
-    cal_sched_3_lesson: "Orientation Interviews and CAF Assistance Consulting",
+    cal_sched_3_lesson: "Orientation Interviews and CAF Assistance Consulting"
+  }
 };
+
