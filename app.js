@@ -252,7 +252,6 @@ document.addEventListener("DOMContentLoaded", function () {
           </div>
           <div class="dock-dropdown-menu">
             <a href="master_caf.html" style="font-weight: 600;">${isEnglish ? "Master CAF & Welfare" : "Master CAF e Patronato"} <span style="color: #25D366; font-size: 0.75rem; font-weight: 700;">LIVE</span></a>
-            <a href="operatore_fiscale.html" style="font-weight: 600;">${isEnglish ? "360° Fiscal Operator" : "Operatore Fiscale 360°"} <span style="color: #25D366; font-size: 0.75rem; font-weight: 700;">LIVE</span></a>
             <a href="esame_italiano.html" style="font-weight: 600;">${isEnglish ? "Italian Language Exams" : "Esami Lingua Italiana"} <span style="color: #25D366; font-size: 0.75rem; font-weight: 700;">LIVE</span></a>
             <a href="corsi_gratuiti.html" style="color: #94A3B8;">${isEnglish ? "Free Job Courses" : "Corsi Gratuiti Disoccupati"} <span style="font-size: 0.7rem; background: rgba(239,68,68,0.25); color: #EF4444; padding: 2px 6px; border-radius: 4px; font-weight: 600;">${isEnglish ? "Coming Soon" : "In Arrivo"}</span></a>
             <a href="master_imprenditore.html" style="color: #94A3B8;">${isEnglish ? "Master Entrepreneur" : "Master Imprenditore"} <span style="font-size: 0.7rem; background: rgba(239,68,68,0.25); color: #EF4444; padding: 2px 6px; border-radius: 4px; font-weight: 600;">${isEnglish ? "Coming Soon" : "In Arrivo"}</span></a>
