@@ -1943,3 +1943,8 @@ header.navbar, header.header, .header-old, #old-header {
   width: 100%;
   height: 100%;
 }
+
+/* Fix overlapping nav on all pages */
+main > *:first-child {
+  padding-top: 140px !important;
+}
