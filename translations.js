@@ -581,7 +581,7 @@ const VELORA_TRANSLATIONS = {
     student_row_3_badge: "STREAMING HD",
     student_btn_watch: "Guarda Video",
     student_cta_title: "Non sei ancora iscritto ai nostri Master o Corsi?",
-    student_cta_desc: "Richiedi subito il modulo di iscrizione con programma completo e scopri come finanziare la tua formazione in 4 comode rate.",
+    student_cta_desc: "Richiedi subito il modulo di iscrizione con programma completo e scopri come finanziare la tua formazione.",
     student_cta_btn: "Compila la Candidatura e Iscriviti",
 
     /* Lavora con Noi Page */
@@ -640,7 +640,7 @@ const VELORA_TRANSLATIONS = {
     contact_hero_title: "Contattaci Subito e Parla con i Nostri Orientatori",
     contact_hero_desc: "Siamo a tua completa disposizione per informazioni sui calendari didattici, convenzioni di esami linguisti per la cittadinanza e aperture di nuove sedi convenzionate.",
     contact_channels_title: "I Nostri Canali Diretti",
-    contact_channels_desc: "Puoi contattare la segreteria scolastica in qualsiasi momento via posta elettronica o telefono. Offriamo colloquio preliminare e assistenza su pratiche di finanziamento in 4 comode rate.",
+    contact_channels_desc: "Puoi contattare la segreteria scolastica in qualsiasi momento via posta elettronica o telefono. Offriamo colloquio preliminare e assistenza su pratiche di finanziamento a rate.",
     contact_wa_title: "Assistenza Whatsapp Immediata",
     contact_wa_desc: "Scrivici per una risposta rapida sui prossimi corsi e posti rimasti disponibili.",
     contact_wa_btn: "Chatta su WhatsApp (+3533183329)",
@@ -691,7 +691,7 @@ const VELORA_TRANSLATIONS = {
     transp_pillar_1_desc: "Il trattamento delle informazioni anagrafiche dei candidati e dei partner convenzionati è gestito con crittografia informatica conforme al Regolamento Europeo 2016/679. I dati raccolti sono trattati con esclusiva finalità didattica, fiscale e di orientamento al lavoro.",
     transp_pillar_1_tag: "★ Conformità Sicurezza Informatica EU",
     transp_pillar_2_title: "Trasparenza Rateale",
-    transp_pillar_2_desc: "Le agevolazioni contrattuali con pagamento diviso in 4 comode rate sono pattuite direttamente tra l'ente formativo e il discente, escludendo l'intermediazione onerosa di banche commerciali o applicazione di interessi di mora usurai. Zero commissioni occulte.",
+    transp_pillar_2_desc: "Le agevolazioni contrattuali con pagamento diviso a rate sono pattuite direttamente tra l'ente formativo e il discente, escludendo l'intermediazione onerosa di banche commerciali o applicazione di interessi di mora usurai. Zero commissioni occulte.",
     transp_pillar_2_tag: "★ Zero Commissioni o Costi Nascosti",
     transp_pillar_3_title: "Codice Etico e Inclusione",
     transp_pillar_3_desc: "Velora Formazione opera bandiendo qualsiasi discrimine di nazionalità, credo e appartenenza di genere. Promoviamo lo sviluppo umano del cittadino straniero facilitando l'integrazione civica con docenze linguistiche e orientamento legale gratuito.",
