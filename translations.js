@@ -216,8 +216,8 @@ const VELORA_TRANSLATIONS = {
     cal_timeline_title: "Prossime Date di Partenza Corsi Professionali",
     cal_timeline_desc: "Ogni corso è erogato con doppia modalità: in presenza presso le aule convenzionate di Milano o in streaming video HD interattivo da tutta Italia.",
     
-    cal_date_caf: "27 GIUGNO 2025",
-    cal_badge_caf: "Numero Chiuso: Max 20 Posti",
+    cal_date_caf: "19 SETTEMBRE 2026",
+    cal_badge_caf: "Numero Chiuso (Posti limitati)",
     cal_title_caf: "Master Operatore di CAF e Patronato",
     cal_desc_caf: "Percorso teorico e tirocinio pratico sui Modelli 730, ISEE, pensioni e welfare Naspi. Nessun titolo di studio preliminare richiesto all'ingresso.",
     cal_loc_caf: "📍 Aula Milano o Online",
@@ -270,12 +270,12 @@ const VELORA_TRANSLATIONS = {
 
     /* Master CAF Page */
     caf_hero_badge: "La Prima Scuola di Formazione Professionale per Operatore di CAF e Patronato",
-    caf_hero_sub: "Formazione Specializzata in Aula e Tirocinio Operativo presso le Nostre Strutture | Inizio: 27 GIUGNO",
+    caf_hero_sub: "Formazione Specializzata in Aula e Tirocinio Operativo presso le Nostre Strutture | Inizio: 19 SETTEMBRE",
     caf_req_title: "Requisiti di Ingresso",
     caf_req_val: "Nessun Titolo Richiesto",
     caf_req_desc: "La direzione si riserva il diritto di selezione tecnica all'ammissione.",
     caf_seats_title: "Posti Disponibili",
-    caf_seats_val: "Numero Chiuso (Max 20)",
+    caf_seats_val: "Numero Chiuso (Posti limitati)",
     caf_seats_desc: "Classi a numero ridotto per garantire assistenza e tutoraggio individuale.",
     caf_cert_title: "Esito e Riconoscimento",
     caf_cert_val: "Attestato di Frequenza",
@@ -1001,7 +1001,7 @@ const VELORA_TRANSLATIONS = {
     cal_timeline_desc: "Every course is delivered in dual mode: on-site at affiliated classrooms in Milan or via interactive HD video streaming from all over Italy.",
     
     cal_date_caf: "JUNE 27, 2025",
-    cal_badge_caf: "Limited Seats: Max 20",
+    cal_badge_caf: "Limited Seats",
     cal_title_caf: "Master CAF and Patronato Operator",
     cal_desc_caf: "Theoretical pathway and practical internship on 730 Forms, ISEE, pensions, and Naspi welfare. No preliminary educational qualification required.",
     cal_loc_caf: "📍 Milan Classroom or Online",
@@ -1059,7 +1059,7 @@ const VELORA_TRANSLATIONS = {
     caf_req_val: "No Title Required",
     caf_req_desc: "Management reserves the right to technical selection upon admission.",
     caf_seats_title: "Available Seats",
-    caf_seats_val: "Limited Enrollment (Max 20)",
+    caf_seats_val: "Limited Enrollment",
     caf_seats_desc: "Small classes to guarantee individual assistance and tutoring.",
     caf_cert_title: "Outcome and Recognition",
     caf_cert_val: "Certificate of Attendance",
