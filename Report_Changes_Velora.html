@@ -1,116 +1,268 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Velora Formazione - Comprehensive Modification Report</title>
 <style>
-  body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #0f172a; color: #f8fafc; margin: 0; padding: 40px; }
-  .container { max-width: 960px; margin: 0 auto; background: #1e293b; padding: 40px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(200, 157, 66, 0.3); }
-  h1 { color: #f8fafc; border-bottom: 3px solid #c89d42; padding-bottom: 12px; margin-top: 0; font-size: 2rem; }
-  .subtitle { color: #e3ba5e; font-size: 1.1rem; margin-top: -10px; margin-bottom: 24px; font-weight: 600; }
-  .summary-box { background: rgba(15, 23, 42, 0.8); border-left: 4px solid #c89d42; padding: 18px; margin-bottom: 36px; border-radius: 8px; border: 1px solid rgba(200, 157, 66, 0.2); }
-  .summary-box p { margin: 6px 0; color: #cbd5e1; font-size: 0.95rem; }
-  .item-card { border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 24px; margin-bottom: 32px; background: #0f172a; }
-  .item-card h2 { color: #e3ba5e; margin-top: 0; font-size: 1.25rem; display: flex; align-items: center; gap: 10px; }
-  .badge { background: #c89d42; color: #0a1628; padding: 2px 10px; border-radius: 12px; font-size: 0.85rem; font-weight: 700; }
-  .item-card p { color: #94a3b8; font-size: 0.98rem; line-height: 1.6; }
-  .img-wrapper { margin-top: 20px; text-align: center; background: #070d18; padding: 16px; border-radius: 10px; border: 1px solid rgba(200, 157, 66, 0.2); }
-  .img-wrapper img { max-width: 100%; height: auto; border-radius: 8px; border: 1px solid #334155; }
+  :root {
+    --bg-page: #edf2f7;
+    --bg-card: #fafbfc;
+    --bg-header: #ffffff;
+    --text-main: #1e293b;
+    --text-muted: #475569;
+    --accent-blue: #2563eb;
+    --light-blue: #e0f2fe;
+    --border-color: #cbd5e1;
+    --badge-bg: #dbeafe;
+    --badge-text: #1e40af;
+  }
+  
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    margin: 0;
+    padding: 40px 20px;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 980px;
+    margin: 0 auto;
+  }
+  
+  .header-card {
+    background: var(--bg-header);
+    padding: 36px 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border-color);
+    margin-bottom: 30px;
+  }
+  
+  h1 {
+    color: #0f172a;
+    font-size: 2.1rem;
+    margin: 0 0 8px 0;
+    font-weight: 700;
+  }
+  
+  .subtitle {
+    color: var(--accent-blue);
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+  
+  .summary-box {
+    background: var(--light-blue);
+    border-left: 4px solid var(--accent-blue);
+    padding: 16px 20px;
+    border-radius: 8px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .summary-item {
+    font-size: 0.95rem;
+    color: #0369a1;
+  }
+  
+  .summary-item strong {
+    color: #0c4a6e;
+  }
+  
+  .item-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    padding: 28px;
+    margin-bottom: 28px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .item-card:hover {
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.08);
+  }
+  
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  
+  .badge {
+    background: var(--badge-bg);
+    color: var(--badge-text);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  
+  h2 {
+    color: #0f172a;
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .card-desc {
+    color: var(--text-muted);
+    font-size: 0.98rem;
+    margin-bottom: 20px;
+  }
+  
+  .img-wrapper {
+    background: #f1f5f9;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    text-align: center;
+  }
+  
+  .img-wrapper img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
 </style>
 </head>
 <body>
+
 <div class="container">
-  <h1>Velora Formazione - Comprehensive Activity Report</h1>
-  <div class="subtitle">Complete Log of Today's Website Modifications & Visual Proof</div>
-  <div class="summary-box">
-    <p><strong>Total Modifications Completed:</strong> 11 Distinct Tasks</p>
-    <p><strong>Date:</strong> August 7, 2026</p>
-    <p><strong>Status:</strong> All changes live & committed to workspace repository.</p>
+  <div class="header-card">
+    <h1>Velora Formazione - Activity Report</h1>
+    <div class="subtitle">Complete Summary of Completed Website Modifications & Visual Proof</div>
+    <div class="summary-box">
+      <div class="summary-item"><strong>Date:</strong> August 7, 2026</div>
+      <div class="summary-item"><strong>Project:</strong> Velora Formazione Updates</div>
+      <div class="summary-item"><strong>Total Tasks Completed:</strong> 11 Modifications</div>
+    </div>
   </div>
 
   <div class="item-card">
-    <h2><span class="badge">Task #1</span> Removed 'Operatore Fiscale 360 Gradi' Course & Page</h2>
-    <p>Deleted operatore_fiscale.html and removed all references from navigation dropdowns, footers, and app.js across the entire website.</p>
+    <div class="card-header">
+      <span class="badge">Task #1</span>
+      <h2>Removed 'Operatore Fiscale 360 Gradi' Course & Page</h2>
+    </div>
+    <div class="card-desc">Deleted operatore_fiscale.html and removed all references from navigation dropdowns, footers, and app.js across the entire website.</div>
     <div class="img-wrapper">
       <img src="screenshot_navbar.png" alt="Removed 'Operatore Fiscale 360 Gradi' Course & Page">
     </div>
   </div>
 
   <div class="item-card">
-    <h2><span class="badge">Task #2</span> Updated Experience Metric from '10+ Anni' to '5+ Anni'</h2>
-    <p>Changed experience statistic from 10+ Anni to 5+ Anni in chi_siamo.html and translations.js.</p>
+    <div class="card-header">
+      <span class="badge">Task #2</span>
+      <h2>Updated Experience Metric from '10+ Anni' to '5+ Anni'</h2>
+    </div>
+    <div class="card-desc">Changed experience statistic from 10+ Anni to 5+ Anni in chi_siamo.html and translations.js.</div>
     <div class="img-wrapper">
       <img src="screenshot_chi_siamo.png" alt="Updated Experience Metric from '10+ Anni' to '5+ Anni'">
     </div>
   </div>
 
   <div class="item-card">
-    <h2><span class="badge">Task #3</span> Global Removal of '4 Comode Rate' / '4 Installments' References</h2>
-    <p>Removed 'in 4 comode rate' text from CTA banners across all pages including area_studente.html, contatti.html, trasparenza.html, and translations.js.</p>
+    <div class="card-header">
+      <span class="badge">Task #3</span>
+      <h2>Global Removal of '4 Comode Rate' / '4 Installments' References</h2>
+    </div>
+    <div class="card-desc">Removed 'in 4 comode rate' text from CTA banners across all pages including area_studente.html, contatti.html, trasparenza.html, and translations.js.</div>
     <div class="img-wrapper">
       <img src="screenshot_area_studente.png" alt="Global Removal of '4 Comode Rate' / '4 Installments' References">
     </div>
   </div>
 
   <div class="item-card">
-    <h2><span class="badge">Task #4</span> Updated Student Area CTA Registration Button Link</h2>
-    <p>Redirected 'Compila la Candidatura e Iscriviti' button in area_studente.html directly to Master CAF registration.</p>
+    <div class="card-header">
+      <span class="badge">Task #4</span>
+      <h2>Updated Student Area CTA Registration Button Link</h2>
+    </div>
+    <div class="card-desc">Redirected 'Compila la Candidatura e Iscriviti' button in area_studente.html directly to Master CAF registration.</div>
     <div class="img-wrapper">
       <img src="screenshot_area_studente.png" alt="Updated Student Area CTA Registration Button Link">
     </div>
   </div>
 
   <div class="item-card">
-    <h2><span class="badge">Task #5</span> Updated Course Start Date to '19 SETTEMBRE'</h2>
-    <p>Replaced '27 GIUGNO' with '19 SETTEMBRE' across hero banners, course cards in master_caf.html, calendario.html, and translations.js.</p>
+    <div class="card-header">
+      <span class="badge">Task #5</span>
+      <h2>Updated Course Start Date to '19 SETTEMBRE'</h2>
+    </div>
+    <div class="card-desc">Replaced '27 GIUGNO' with '19 SETTEMBRE' across hero banners, course cards in master_caf.html, calendario.html, and translations.js.</div>
     <div class="img-wrapper">
       <img src="screenshot_master_caf.png" alt="Updated Course Start Date to '19 SETTEMBRE'">
     </div>
   </div>
 
   <div class="item-card">
-    <h2><span class="badge">Task #6</span> Updated Seat Capacity Limit to 'Posti Limitati'</h2>
-    <p>Replaced 'Numero Chiuso (Max 20)' with 'Numero Chiuso (Posti limitati)' in master_caf.html, calendario.html, and translations.js.</p>
+    <div class="card-header">
+      <span class="badge">Task #6</span>
+      <h2>Updated Seat Capacity Limit to 'Posti Limitati'</h2>
+    </div>
+    <div class="card-desc">Replaced 'Numero Chiuso (Max 20)' with 'Numero Chiuso (Posti limitati)' in master_caf.html, calendario.html, and translations.js.</div>
     <div class="img-wrapper">
       <img src="screenshot_calendario.png" alt="Updated Seat Capacity Limit to 'Posti Limitati'">
     </div>
   </div>
 
   <div class="item-card">
-    <h2><span class="badge">Task #7</span> Fixed Global Navbar Content Overlap Issue</h2>
-    <p>Added global top-padding fix in style.css to ensure the fixed floating pill navbar does not obscure page hero content on any page.</p>
+    <div class="card-header">
+      <span class="badge">Task #7</span>
+      <h2>Fixed Global Navbar Content Overlap Issue</h2>
+    </div>
+    <div class="card-desc">Added global top-padding fix in style.css to ensure the fixed floating pill navbar does not obscure page hero content on any page.</div>
     <div class="img-wrapper">
       <img src="screenshot_navbar.png" alt="Fixed Global Navbar Content Overlap Issue">
     </div>
   </div>
 
   <div class="item-card">
-    <h2><span class="badge">Task #8</span> Removed Booking Form from Italian Language Exams Page</h2>
-    <p>Completely removed the 'Fill Out the Booking Form' section from esame_italiano.html and updated button links.</p>
+    <div class="card-header">
+      <span class="badge">Task #8</span>
+      <h2>Removed Booking Form from Italian Language Exams Page</h2>
+    </div>
+    <div class="card-desc">Completely removed the 'Fill Out the Booking Form' section from esame_italiano.html and updated button links.</div>
     <div class="img-wrapper">
       <img src="screenshot_esame_italiano.png" alt="Removed Booking Form from Italian Language Exams Page">
     </div>
   </div>
 
   <div class="item-card">
-    <h2><span class="badge">Task #9</span> Removed Application Form from Master CAF Page</h2>
-    <p>Completely removed the 'Candidati e Compila il Modulo' section from master_caf.html and updated button links.</p>
+    <div class="card-header">
+      <span class="badge">Task #9</span>
+      <h2>Removed Application Form from Master CAF Page</h2>
+    </div>
+    <div class="card-desc">Completely removed the 'Candidati e Compila il Modulo' section from master_caf.html and updated button links.</div>
     <div class="img-wrapper">
       <img src="screenshot_master_caf.png" alt="Removed Application Form from Master CAF Page">
     </div>
   </div>
 
   <div class="item-card">
-    <h2><span class="badge">Task #10</span> Updated Course Location from Milano to Bergamo</h2>
-    <p>Replaced 'Milano (Via Guido Mazzali 5)' with 'Sede a Bergamo' and updated location badge to 'BERGAMO' in master_caf.html and translations.js.</p>
+    <div class="card-header">
+      <span class="badge">Task #10</span>
+      <h2>Updated Course Location from Milano to Bergamo</h2>
+    </div>
+    <div class="card-desc">Replaced 'Milano (Via Guido Mazzali 5)' with 'Sede a Bergamo' and updated location badge to 'BERGAMO' in master_caf.html and translations.js.</div>
     <div class="img-wrapper">
       <img src="screenshot_master_caf.png" alt="Updated Course Location from Milano to Bergamo">
     </div>
   </div>
 
   <div class="item-card">
-    <h2><span class="badge">Task #11</span> Updated Financing Option Text (Removed '4 Rate')</h2>
-    <p>Updated financing promo banner from 'Finanziamento Agevolato in 4 Rate' to 'Finanziamento Agevolato a Rate Disponibile' in translations.js.</p>
+    <div class="card-header">
+      <span class="badge">Task #11</span>
+      <h2>Updated Financing Option Text (Removed '4 Rate')</h2>
+    </div>
+    <div class="card-desc">Updated financing promo banner from 'Finanziamento Agevolato in 4 Rate' to 'Finanziamento Agevolato a Rate Disponibile' in translations.js.</div>
     <div class="img-wrapper">
       <img src="screenshot_contatti.png" alt="Updated Financing Option Text (Removed '4 Rate')">
     </div>
