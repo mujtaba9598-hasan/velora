@@ -202,7 +202,7 @@ const VELORA_TRANSLATIONS = {
     student_row_3_desc: "Video guida passo passo per i servizi di identità digitale",
     student_btn_watch: "Guarda Video",
     student_cta_title: "Non sei ancora iscritto ai nostri Master o Corsi?",
-    student_cta_desc: "Richiedi subito il modulo di iscrizione con programma completo e scopri come finanziare la tua formazione in 4 comode rate.",
+    student_cta_desc: "Richiedi subito il modulo di iscrizione con programma completo e scopri come finanziare la tua formazione.",
     student_cta_btn: "Compila la Candidatura e Iscriviti",
 
     /* Calendar (calendario.html) Vocabulary */
@@ -1365,7 +1365,7 @@ const VELORA_TRANSLATIONS = {
     student_row_3_badge: "HD STREAMING",
     student_btn_watch: "Watch Video",
     student_cta_title: "Not yet enrolled in our Masters or Courses?",
-    student_cta_desc: "Request the enrollment form with the complete program now and find out how to finance your education in 4 easy installments.",
+    student_cta_desc: "Request the enrollment form immediately with the complete syllabus and discover how to finance your education.",
     student_cta_btn: "Fill Out the Application and Enroll",
 
     /* Lavora con Noi Page */
