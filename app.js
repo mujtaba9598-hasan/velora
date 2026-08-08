@@ -256,7 +256,6 @@ document.addEventListener("DOMContentLoaded", function () {
             <a href="corsi_gratuiti.html" style="color: #94A3B8;">${isEnglish ? "Free Job Courses" : "Corsi Gratuiti Disoccupati"} <span style="font-size: 0.7rem; background: rgba(239,68,68,0.25); color: #EF4444; padding: 2px 6px; border-radius: 4px; font-weight: 600;">${isEnglish ? "Coming Soon" : "In Arrivo"}</span></a>
             <a href="master_imprenditore.html" style="color: #94A3B8;">${isEnglish ? "Master Entrepreneur" : "Master Imprenditore"} <span style="font-size: 0.7rem; background: rgba(239,68,68,0.25); color: #EF4444; padding: 2px 6px; border-radius: 4px; font-weight: 600;">${isEnglish ? "Coming Soon" : "In Arrivo"}</span></a>
             <a href="manuali.html">${isEnglish ? "Official Handbook" : "Manuale Ufficiale"} <span>→</span></a>
-            <a href="trasparenza.html">${isEnglish ? "Civic Transparency" : "Trasparenza Civica"} <span>→</span></a>
           </div>
         </div>
 
